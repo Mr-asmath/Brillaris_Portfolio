@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Business Consulting - GLOBAL STRATEGY</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "obsidian": "#092E2A",
+                        "champagne": "#C9A96E",
+                        "ivory": "#F9F8F6",
+                        "sand": "#E8E5DF",
+                        "charcoal": "#2A2A2A",
+                        "tertiary": "#C9A96E",
+                        "on-tertiary": "#FFFFFF",
+                        "surface": "#F9F8F6",
+                        "on-surface": "#092E2A",
+                        "on-surface-variant": "#4A4A4A",
+                        "surface-container": "#FFFFFF",
+                        "surface-container-lowest": "#092E2A",
+                        "outline": "#E8E5DF",
+                        "outline-variant": "#E8E5DF"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "2rem",
+                        "margin-desktop": "5vw",
+                        "unit": "0.5rem",
+                        "container-max": "1440px",
+                        "margin-mobile": "1.5rem"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter", "sans-serif"],
+                        "body-md": ["Inter", "sans-serif"],
+                        "headline-sm": ["Playfair Display", "serif"],
+                        "label-caps": ["Inter", "sans-serif"],
+                        "display-lg": ["Playfair Display", "serif"],
+                        "display-lg-mobile": ["Playfair Display", "serif"],
+                        "headline-md": ["Playfair Display", "serif"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["1.125rem", { "lineHeight": "1.6", "fontWeight": "300" }],
+                        "body-md": ["1rem", { "lineHeight": "1.6", "fontWeight": "300" }],
+                        "headline-sm": ["1.75rem", { "lineHeight": "1.3", "fontWeight": "400" }],
+                        "label-caps": ["0.75rem", { "lineHeight": "1", "letterSpacing": "0.15em", "fontWeight": "600" }],
+                        "display-lg": ["5rem", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500" }],
+                        "display-lg-mobile": ["3rem", { "lineHeight": "1.1", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+                        "headline-md": ["3rem", { "lineHeight": "1.2", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #F9F8F6; color: #092E2A; }
+        
+        .fade-in-up { animation: fadeInUp 1s ease-out forwards; opacity: 0; transform: translateY(30px); }
+        @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        
+        /* Subtle line animations */
+        .line-grow { animation: growLine 1.5s ease-out forwards; transform-origin: left; transform: scaleX(0); }
+        @keyframes growLine { to { transform: scaleX(1); } }
+        
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+
+        /* Navigation transition */
+        .nav-scrolled {
+            background-color: rgba(249, 248, 246, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(9, 46, 42, 0.1);
+        }
+        .nav-scrolled .nav-text { color: #092E2A; }
+        .nav-scrolled .nav-logo { filter: invert(0); }
+    </style>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const nav = document.getElementById('main-nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    nav.classList.add('nav-scrolled');
+                    nav.classList.remove('bg-transparent');
+                } else {
+                    nav.classList.remove('nav-scrolled');
+                    nav.classList.add('bg-transparent');
+                }
+            });
+        });
+    </script>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-body-lg text-body-lg">
+<!-- TopNavBar -->
+<nav class="bg-transparent fixed top-0 w-full z-50 transition-all duration-500" id="main-nav">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="w-48">
+<img alt="Global Strategy Logo" class="w-full h-auto object-contain nav-logo transition-all duration-500 brightness-0 invert" src="https://lh3.googleusercontent.com/aida/AP1WRLs9lf6B9j5XcF5Ran9DeZdiAMO4I5RmzvhAn7caNdbR6LkWXGobevHRpfibwbU5efv900pCQJNCYhEPq6q2qt07BPfsMaNlcDcjbJT8JkYPuxOR8KKYFN72vCFtplpcusR_9hPvSChSWTsNZcmgLaij8dvG528iAw-ZI81GVE6RkELLuqCXxUi1rd4l0qO3lJHPzb6C67BqrhR5YV8xCdrUV-ZjIFLIQQkMdLM_2L5SQlbF7bgyS76usg"/>
+</div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-10">
+<ul class="flex gap-8 font-label-caps text-label-caps uppercase tracking-widest nav-text text-white transition-colors duration-500">
+<li><a class="hover:text-champagne transition-colors duration-300" href="#">Insights</a></li>
+<li><a class="text-champagne border-b border-champagne pb-1" href="#">Solutions</a></li>
+<li><a class="hover:text-champagne transition-colors duration-300" href="#">Markets</a></li>
+<li><a class="hover:text-champagne transition-colors duration-300" href="#">Network</a></li>
+<li><a class="hover:text-champagne transition-colors duration-300" href="#">About</a></li>
+</ul>
+<div class="flex items-center gap-8 nav-text text-white transition-colors duration-500">
+<span class="material-symbols-outlined hover:text-champagne cursor-pointer transition-colors" data-icon="search">search</span>
+<button class="bg-obsidian text-white font-label-caps text-label-caps px-8 py-4 uppercase tracking-widest hover:bg-champagne transition-colors duration-300">
+                        Contact Us
+                    </button>
+</div>
+</div>
+<!-- Mobile Menu Toggle -->
+<div class="md:hidden flex items-center nav-text text-white">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex items-end pb-24 md:pb-32 px-margin-mobile md:px-margin-desktop">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-obsidian/40 mix-blend-multiply z-10"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-obsidian/30 z-10"></div>
+<img alt="Cinematic executive boardroom" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLty5TjMDnNLpDdgv0XyyCJMfNhyWcOde4XqqjGsJKtK_fe3pKwMsrTRsc8nInj4fT3glP6EWtNUZ4nevbnetWeMFE7Lfaj8JB19wy2uiHBp0ukdIiieGMViM41QTQL3jfF0HR-2hUaLBNJnro1Vsm7Lx_odhYnIeF9RNhPBFXZZUKNzvK3vW5GrFAt60_ioJC02LepdPSxcURBmucDyrUZWvUzgAk-4PKxnqiqocTEc70yArlFLYvSAstg"/>
+</div>
+<div class="relative z-20 max-w-container-max mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-10 lg:col-span-8 flex flex-col gap-6 fade-in-up">
+<div class="font-label-caps text-label-caps text-champagne uppercase tracking-widest flex items-center gap-4">
+<span class="w-12 h-px bg-champagne line-grow"></span> SERVICES / 01
+                    </div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white">Business Consulting</h1>
+<p class="font-body-lg text-body-lg text-sand max-w-2xl mt-4 md:mt-6 font-light">
+                        Transform complex business challenges into clear, actionable growth strategies. We provide global insights for localized impact, engineered for institutional stability and market dominance.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Overview Section -->
+<section class="py-24 md:py-32 px-margin-mobile md:px-margin-desktop bg-surface relative">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-sand/30 -z-10"></div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
+<div class="md:col-span-5 flex flex-col gap-8 fade-in-up sticky top-32">
+<h2 class="font-headline-md text-headline-md text-obsidian italic">Turning Complexity Into Direction.</h2>
+<div class="w-16 h-px bg-champagne"></div>
+</div>
+<div class="md:col-span-6 md:col-start-7 flex flex-col gap-8 fade-in-up delay-100 mt-8 md:mt-0">
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Our approach bridges the gap between visionary thinking and operational reality. We partner with executive teams to dissect market volatility, architect resilient operating models, and execute strategic shifts that define industry leadership.
+                    </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        By combining deep sector expertise with proprietary analytics frameworks, we ensure that every strategic initiative is grounded in empirical data and aligned with long-term enterprise value creation.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-6 mt-8">
+<button class="bg-obsidian text-white font-label-caps text-label-caps px-8 py-4 uppercase tracking-widest hover:bg-champagne transition-colors duration-300 w-fit">
+                            Consult an Expert
+                        </button>
+<button class="bg-transparent border border-obsidian text-obsidian font-label-caps text-label-caps px-8 py-4 uppercase tracking-widest hover:bg-obsidian hover:text-white transition-colors duration-300 w-fit">
+                            Download Overview
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Capabilities Section -->
+<section class="py-24 md:py-32 px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 fade-in-up">
+<div>
+<div class="font-label-caps text-label-caps text-champagne uppercase tracking-widest flex items-center gap-4 mb-6">
+<span class="w-8 h-px bg-champagne"></span> EXPERTISE
+                    </div>
+<h2 class="font-headline-md text-headline-md text-obsidian mb-4">Core Capabilities</h2>
+</div>
+<div class="hidden md:flex gap-4">
+<button class="w-12 h-12 border border-outline flex items-center justify-center text-obsidian hover:border-obsidian transition-colors"><span class="material-symbols-outlined font-light" data-icon="arrow_back">arrow_back</span></button>
+<button class="w-12 h-12 border border-outline flex items-center justify-center text-obsidian hover:border-obsidian transition-colors"><span class="material-symbols-outlined font-light" data-icon="arrow_forward">arrow_forward</span></button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-white p-10 border border-outline hover:border-champagne transition-colors duration-500 group cursor-pointer fade-in-up">
+<div class="w-12 h-12 bg-surface flex items-center justify-center mb-10 group-hover:bg-obsidian transition-colors duration-500">
+<span class="material-symbols-outlined text-obsidian group-hover:text-champagne transition-colors duration-500 font-light" data-icon="strategy">strategy</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-obsidian mb-4">Business Strategy</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light line-clamp-3">Architecting sustainable competitive advantages in volatile global markets through rigorous analysis and bold repositioning.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-white p-10 border border-outline hover:border-champagne transition-colors duration-500 group cursor-pointer fade-in-up delay-100">
+<div class="w-12 h-12 bg-surface flex items-center justify-center mb-10 group-hover:bg-obsidian transition-colors duration-500">
+<span class="material-symbols-outlined text-obsidian group-hover:text-champagne transition-colors duration-500 font-light" data-icon="public">public</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-obsidian mb-4">Market Expansion</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light line-clamp-3">Navigating complex regulatory environments and cultural nuances to successfully enter and scale in new international territories.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-white p-10 border border-outline hover:border-champagne transition-colors duration-500 group cursor-pointer fade-in-up delay-200">
+<div class="w-12 h-12 bg-surface flex items-center justify-center mb-10 group-hover:bg-obsidian transition-colors duration-500">
+<span class="material-symbols-outlined text-obsidian group-hover:text-champagne transition-colors duration-500 font-light" data-icon="memory">memory</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-obsidian mb-4">Digital Transformation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light line-clamp-3">Integrating cutting-edge technologies with legacy systems to create agile, data-driven operational ecosystems.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-white p-10 border border-outline hover:border-champagne transition-colors duration-500 group cursor-pointer fade-in-up">
+<div class="w-12 h-12 bg-surface flex items-center justify-center mb-10 group-hover:bg-obsidian transition-colors duration-500">
+<span class="material-symbols-outlined text-obsidian group-hover:text-champagne transition-colors duration-500 font-light" data-icon="settings_suggest">settings_suggest</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-obsidian mb-4">Operational Excellence</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light line-clamp-3">Streamlining complex global supply chains and internal processes to maximize efficiency and reduce institutional drag.</p>
+</div>
+<!-- Card 5 -->
+<div class="bg-white p-10 border border-outline hover:border-champagne transition-colors duration-500 group cursor-pointer fade-in-up delay-100">
+<div class="w-12 h-12 bg-surface flex items-center justify-center mb-10 group-hover:bg-obsidian transition-colors duration-500">
+<span class="material-symbols-outlined text-obsidian group-hover:text-champagne transition-colors duration-500 font-light" data-icon="trending_up">trending_up</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-obsidian mb-4">Growth Strategy</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light line-clamp-3">Identifying and capturing new revenue streams through innovative product development, M&amp;A strategy, and market positioning.</p>
+</div>
+<!-- Card 6 -->
+<div class="bg-white p-10 border border-outline hover:border-champagne transition-colors duration-500 group cursor-pointer fade-in-up delay-200">
+<div class="w-12 h-12 bg-surface flex items-center justify-center mb-10 group-hover:bg-obsidian transition-colors duration-500">
+<span class="material-symbols-outlined text-obsidian group-hover:text-champagne transition-colors duration-500 font-light" data-icon="groups">groups</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-obsidian mb-4">Organizational Transformation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light line-clamp-3">Redesigning corporate structures and culture to foster agility, leadership alignment, and resilient global teams.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Methodology Section -->
+<section class="py-24 md:py-32 px-margin-mobile md:px-margin-desktop bg-obsidian text-white relative overflow-hidden">
+<div class="max-w-container-max mx-auto relative z-10">
+<div class="text-center mb-20 fade-in-up">
+<div class="font-label-caps text-label-caps text-champagne uppercase tracking-widest flex items-center justify-center gap-4 mb-6">
+<span class="w-8 h-px bg-champagne"></span> METHODOLOGY <span class="w-8 h-px bg-champagne"></span>
+</div>
+<h2 class="font-headline-md text-headline-md italic">A Disciplined Approach</h2>
+</div>
+<div class="relative grid grid-cols-1 md:grid-cols-4 gap-12 text-center">
+<!-- Connecting Line -->
+<div class="hidden md:block absolute top-6 left-[12.5%] right-[12.5%] h-px bg-champagne/30 z-0"></div>
+<!-- Stage 1 -->
+<div class="relative z-10 fade-in-up">
+<div class="w-12 h-12 bg-obsidian border border-champagne rounded-full flex items-center justify-center mx-auto mb-6 text-champagne font-headline-sm">1</div>
+<h4 class="font-headline-sm text-headline-sm mb-4">Discover</h4>
+<p class="font-body-md text-body-md text-sand/80 font-light">Deep empirical analysis of market conditions, internal capabilities, and competitive dynamics.</p>
+</div>
+<!-- Stage 2 -->
+<div class="relative z-10 fade-in-up delay-100">
+<div class="w-12 h-12 bg-obsidian border border-champagne rounded-full flex items-center justify-center mx-auto mb-6 text-champagne font-headline-sm">2</div>
+<h4 class="font-headline-sm text-headline-sm mb-4">Define</h4>
+<p class="font-body-md text-body-md text-sand/80 font-light">Synthesizing findings to articulate clear, visionary strategic objectives and value propositions.</p>
+</div>
+<!-- Stage 3 -->
+<div class="relative z-10 fade-in-up delay-200">
+<div class="w-12 h-12 bg-obsidian border border-champagne rounded-full flex items-center justify-center mx-auto mb-6 text-champagne font-headline-sm">3</div>
+<h4 class="font-headline-sm text-headline-sm mb-4">Design</h4>
+<p class="font-body-md text-body-md text-sand/80 font-light">Architecting the operational models, organizational structures, and roadmaps required for execution.</p>
+</div>
+<!-- Stage 4 -->
+<div class="relative z-10 fade-in-up delay-300">
+<div class="w-12 h-12 bg-obsidian border border-champagne rounded-full flex items-center justify-center mx-auto mb-6 text-champagne font-headline-sm">4</div>
+<h4 class="font-headline-sm text-headline-sm mb-4">Deliver</h4>
+<p class="font-body-md text-body-md text-sand/80 font-light">Rigorous implementation support, change management, and performance tracking to ensure ROI.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Industries Section -->
+<section class="py-24 md:py-32 px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-4 fade-in-up sticky top-32">
+<div class="font-label-caps text-label-caps text-champagne uppercase tracking-widest flex items-center gap-4 mb-6">
+<span class="w-8 h-px bg-champagne"></span> SECTORS
+                </div>
+<h2 class="font-headline-md text-headline-md text-obsidian mb-8">Industry Expertise</h2>
+<p class="font-body-md text-body-md text-on-surface-variant font-light mb-8">We bring specialized sector knowledge to bear on unique strategic challenges, ensuring relevant and impactful guidance.</p>
+<button class="bg-transparent border-b border-obsidian text-obsidian font-label-caps text-label-caps pb-2 uppercase tracking-widest hover:text-champagne hover:border-champagne transition-colors duration-300 w-fit flex items-center gap-2">
+                    View All Sectors <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="md:col-span-7 md:col-start-6 mt-12 md:mt-0">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12">
+<div class="border-t border-outline pt-6 fade-in-up">
+<h4 class="font-headline-sm text-headline-sm text-obsidian mb-2">Financial Services</h4>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">Navigating regulatory shifts and fintech disruption.</p>
+</div>
+<div class="border-t border-outline pt-6 fade-in-up delay-100">
+<h4 class="font-headline-sm text-headline-sm text-obsidian mb-2">Healthcare</h4>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">Optimizing outcomes and operational efficiency.</p>
+</div>
+<div class="border-t border-outline pt-6 fade-in-up">
+<h4 class="font-headline-sm text-headline-sm text-obsidian mb-2">Technology</h4>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">Scaling innovation and managing hyper-growth.</p>
+</div>
+<div class="border-t border-outline pt-6 fade-in-up delay-100">
+<h4 class="font-headline-sm text-headline-sm text-obsidian mb-2">Energy</h4>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">Transitioning to sustainable models and optimizing assets.</p>
+</div>
+<div class="border-t border-outline pt-6 fade-in-up">
+<h4 class="font-headline-sm text-headline-sm text-obsidian mb-2">Consumer Goods</h4>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">Adapting to shifting behaviors and supply chain volatility.</p>
+</div>
+<div class="border-t border-outline pt-6 fade-in-up delay-100">
+<h4 class="font-headline-sm text-headline-sm text-obsidian mb-2">Manufacturing</h4>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">Driving Industry 4.0 adoption and footprint optimization.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-margin-mobile md:px-margin-desktop bg-surface border-t border-outline relative overflow-hidden">
+<div class="max-w-4xl mx-auto text-center relative z-10 fade-in-up">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-obsidian mb-8 italic">Let's Discuss Your Challenge.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl mx-auto font-light">
+                    Partner with our executive strategy team to define your next era of growth and market leadership.
+                </p>
+<button class="bg-obsidian text-white font-label-caps text-label-caps px-10 py-5 uppercase tracking-widest hover:bg-champagne transition-colors duration-300">
+                    Start A Conversation
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest text-white w-full">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-20 max-w-container-max mx-auto border-t border-white/10">
+<div class="col-span-1 md:col-span-2 mb-8 md:mb-0">
+<div class="w-48 mb-6">
+<img alt="Global Strategy Logo" class="w-full h-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/AP1WRLs9lf6B9j5XcF5Ran9DeZdiAMO4I5RmzvhAn7caNdbR6LkWXGobevHRpfibwbU5efv900pCQJNCYhEPq6q2qt07BPfsMaNlcDcjbJT8JkYPuxOR8KKYFN72vCFtplpcusR_9hPvSChSWTsNZcmgLaij8dvG528iAw-ZI81GVE6RkELLuqCXxUi1rd4l0qO3lJHPzb6C67BqrhR5YV8xCdrUV-ZjIFLIQQkMdLM_2L5SQlbF7bgyS76usg"/>
+</div>
+<div class="font-body-md text-body-md text-sand/70 font-light mt-12">
+                    © 2024 Global Strategy Group. All rights reserved.
+                </div>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps text-champagne mb-6 uppercase tracking-widest">Connect</h4>
+<ul class="space-y-4 font-body-md text-body-md font-light">
+<li><a class="text-sand/80 hover:text-champagne transition-colors duration-300" href="#">Global Offices</a></li>
+<li><a class="text-sand/80 hover:text-champagne transition-colors duration-300" href="#">Careers</a></li>
+<li><a class="text-sand/80 hover:text-champagne transition-colors duration-300" href="#">Media Relations</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps text-champagne mb-6 uppercase tracking-widest">Legal</h4>
+<ul class="space-y-4 font-body-md text-body-md font-light">
+<li><a class="text-sand/80 hover:text-champagne transition-colors duration-300" href="#">Privacy Policy</a></li>
+<li><a class="text-sand/80 hover:text-champagne transition-colors duration-300" href="#">Terms of Service</a></li>
+<li><a class="text-sand/80 hover:text-champagne transition-colors duration-300" href="#">Compliance</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>

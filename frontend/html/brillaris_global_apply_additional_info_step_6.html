@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Job Application - Brillaris Global</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Config -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#372600",
+                    "secondary-container": "#164f48",
+                    "inverse-primary": "#436560",
+                    "on-primary-container": "#749791",
+                    "primary-fixed": "#c5eae3",
+                    "on-secondary-fixed": "#00201c",
+                    "primary-container": "#092e2a",
+                    "secondary-fixed-dim": "#9bd1c7",
+                    "primary": "#a9cec7",
+                    "secondary-fixed": "#b6ede3",
+                    "surface-container-lowest": "#0d0f0c",
+                    "on-tertiary-container": "#aa8c54",
+                    "inverse-surface": "#e3e3de",
+                    "on-error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#164f48",
+                    "surface-bright": "#383a36",
+                    "outline-variant": "#414847",
+                    "surface-container-highest": "#343532",
+                    "background": "#121411",
+                    "secondary": "#9bd1c7",
+                    "error": "#ffb4ab",
+                    "surface-tint": "#a9cec7",
+                    "surface-container": "#1f201d",
+                    "on-surface": "#e3e3de",
+                    "surface-dim": "#121411",
+                    "surface-container-high": "#292a27",
+                    "on-background": "#e3e3de",
+                    "tertiary-fixed": "#ffdea4",
+                    "tertiary": "#e4c285",
+                    "primary-fixed-dim": "#a9cec7",
+                    "inverse-on-surface": "#30312e",
+                    "outline": "#8b9290",
+                    "on-primary-fixed": "#00201d",
+                    "surface-container-low": "#1b1c19",
+                    "surface": "#121411",
+                    "on-primary-fixed-variant": "#2b4d48",
+                    "on-error": "#690005",
+                    "on-secondary-container": "#89bfb6",
+                    "on-tertiary-fixed-variant": "#5a4312",
+                    "tertiary-fixed-dim": "#e4c285",
+                    "on-tertiary-fixed": "#261900",
+                    "on-secondary": "#003731",
+                    "on-primary": "#133632",
+                    "surface-variant": "#343532",
+                    "on-tertiary": "#412d00",
+                    "on-surface-variant": "#c1c8c6",
+                    "error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "label-caps": ["Inter"],
+                    "body-md": ["Inter"],
+                    "display-lg": ["Playfair Display"],
+                    "body-lg": ["Inter"],
+                    "headline-sm": ["Playfair Display"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                    "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                    "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                    "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                    "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                    "display-lg-mobile": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                    "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col font-body-md antialiased selection:bg-tertiary/30 selection:text-tertiary-container relative overflow-x-hidden">
+<!-- Ambient Background Pattern (Global Network Hint) -->
+<div class="fixed inset-0 pointer-events-none z-0 opacity-[0.03]" style="background-image: radial-gradient(circle at 2px 2px, #4F8F78 1px, transparent 0); background-size: 32px 32px;"></div>
+<!-- Minimal Transactional Header (Suppressed main nav for linear flow) -->
+<header class="w-full py-8 px-margin-mobile md:px-margin-desktop flex justify-center border-b border-outline-variant/15 z-10 relative bg-surface/80 backdrop-blur-md">
+<div class="font-display-lg text-headline-sm text-tertiary tracking-wide uppercase text-center w-full max-w-container-max flex justify-between items-center">
+<span class="opacity-0 w-8"></span> <!-- Spacer for centering -->
+<span>Brillaris Global</span>
+<button class="text-on-surface-variant hover:text-tertiary transition-colors flex items-center justify-center w-8 h-8 rounded-full">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</header>
+<main class="flex-grow flex flex-col items-center py-16 md:py-24 px-margin-mobile md:px-margin-desktop w-full z-10 relative">
+<div class="max-w-2xl w-full flex flex-col gap-12">
+<!-- Progress Indicator -->
+<div class="w-full flex flex-col gap-4">
+<div class="flex items-center justify-between relative">
+<!-- Connecting Track -->
+<div class="absolute left-0 top-1/2 -translate-y-1/2 w-full h-[1px] bg-outline-variant/30 z-0"></div>
+<!-- Active Track (up to step 6) -->
+<div class="absolute left-0 top-1/2 -translate-y-1/2 w-full h-[1px] bg-tertiary/50 z-0 shadow-[0_0_10px_rgba(228,194,133,0.3)]"></div>
+<!-- Nodes -->
+<div class="w-3 h-3 rounded-full bg-tertiary z-10 shadow-[0_0_8px_rgba(228,194,133,0.5)]"></div>
+<div class="w-3 h-3 rounded-full bg-tertiary z-10 shadow-[0_0_8px_rgba(228,194,133,0.5)]"></div>
+<div class="w-3 h-3 rounded-full bg-tertiary z-10 shadow-[0_0_8px_rgba(228,194,133,0.5)]"></div>
+<div class="w-3 h-3 rounded-full bg-tertiary z-10 shadow-[0_0_8px_rgba(228,194,133,0.5)]"></div>
+<div class="w-3 h-3 rounded-full bg-tertiary z-10 shadow-[0_0_8px_rgba(228,194,133,0.5)]"></div>
+<!-- Current Node (Step 6) -->
+<div class="w-4 h-4 rounded-full bg-surface border-2 border-tertiary z-10 flex items-center justify-center">
+<div class="w-1.5 h-1.5 bg-tertiary rounded-full animate-pulse"></div>
+</div>
+</div>
+<div class="flex justify-between w-full">
+<span class="font-label-caps text-label-caps text-tertiary uppercase tracking-widest">Step 06</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Final</span>
+</div>
+</div>
+<!-- Form Container -->
+<div class="bg-surface-container/50 border border-outline-variant/20 p-8 md:p-12 backdrop-blur-sm shadow-2xl relative overflow-hidden group">
+<!-- Architectural Accent Line -->
+<div class="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-primary/30 to-transparent opacity-50 group-hover:opacity-100 transition-opacity duration-700"></div>
+<div class="mb-10">
+<h1 class="font-headline-md text-headline-md text-on-surface mb-2 tracking-tight">Additional Information</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">Provide any supplementary materials that showcase your expertise and global impact.</p>
+</div>
+<form class="flex flex-col gap-8">
+<!-- Cover Letter Field -->
+<div class="flex flex-col gap-3 group/field">
+<label class="font-label-caps text-label-caps text-on-surface-variant group-focus-within/field:text-tertiary transition-colors flex items-center gap-2" for="cover_letter">
+<span class="material-symbols-outlined text-[16px]">edit_document</span>
+                            Cover Letter
+                        </label>
+<div class="relative">
+<textarea class="w-full bg-surface-dim/50 border-0 border-b border-outline-variant text-on-surface font-body-md p-4 pb-3 focus:ring-0 focus:border-tertiary focus:bg-surface-dim transition-all resize-none placeholder-on-surface-variant/40 hover:border-outline outline-none" id="cover_letter" placeholder="Detail your executive narrative and strategic value proposition..." rows="5"></textarea>
+<div class="absolute bottom-0 left-0 w-0 h-[1px] bg-tertiary transition-all duration-300 group-focus-within/field:w-full"></div>
+</div>
+</div>
+<!-- Portfolio URL Field -->
+<div class="flex flex-col gap-3 group/field">
+<label class="font-label-caps text-label-caps text-on-surface-variant group-focus-within/field:text-tertiary transition-colors flex items-center gap-2" for="portfolio_url">
+<span class="material-symbols-outlined text-[16px]">language</span>
+                            Portfolio URL
+                        </label>
+<div class="relative">
+<input class="w-full bg-surface-dim/50 border-0 border-b border-outline-variant text-on-surface font-body-md p-4 pb-3 focus:ring-0 focus:border-tertiary focus:bg-surface-dim transition-all placeholder-on-surface-variant/40 hover:border-outline outline-none" id="portfolio_url" placeholder="https://your-domain.com" type="url"/>
+<div class="absolute bottom-0 left-0 w-0 h-[1px] bg-tertiary transition-all duration-300 group-focus-within/field:w-full"></div>
+</div>
+</div>
+<!-- Additional Links Field -->
+<div class="flex flex-col gap-3 group/field">
+<label class="font-label-caps text-label-caps text-on-surface-variant group-focus-within/field:text-tertiary transition-colors flex items-center gap-2" for="additional_links">
+<span class="material-symbols-outlined text-[16px]">link</span>
+                            Additional Relevant Links
+                        </label>
+<div class="relative">
+<input class="w-full bg-surface-dim/50 border-0 border-b border-outline-variant text-on-surface font-body-md p-4 pb-3 focus:ring-0 focus:border-tertiary focus:bg-surface-dim transition-all placeholder-on-surface-variant/40 hover:border-outline outline-none" id="additional_links" placeholder="LinkedIn profile, publications, etc." type="text"/>
+<div class="absolute bottom-0 left-0 w-0 h-[1px] bg-tertiary transition-all duration-300 group-focus-within/field:w-full"></div>
+</div>
+<p class="text-[13px] text-on-surface-variant/60 font-body-md mt-1">Separate multiple links with commas.</p>
+</div>
+</form>
+</div>
+<!-- Navigation Actions -->
+<div class="flex flex-col sm:flex-row justify-between items-center pt-8 border-t border-outline-variant/15 gap-4">
+<button class="px-8 py-3 border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary transition-all font-body-md w-full sm:w-auto flex items-center justify-center gap-2 group" type="button">
+<span class="material-symbols-outlined text-[18px] group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                    Previous Step
+                </button>
+<button class="px-10 py-3 bg-tertiary text-tertiary-container hover:bg-tertiary/90 shadow-[0_0_15px_rgba(228,194,133,0.1)] hover:shadow-[0_0_25px_rgba(228,194,133,0.25)] transition-all font-body-md font-semibold w-full sm:w-auto flex items-center justify-center gap-2 group" type="button">
+                    Save &amp; Continue
+                    <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</main>
+<!-- Footer from JSON -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest w-full py-20 mt-auto border-t border-outline-variant/10 z-10 relative">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="col-span-1 lg:col-span-4 mb-8">
+<span class="font-display-lg text-headline-md text-tertiary dark:text-tertiary">Brillaris Global</span>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-tertiary transition-colors hover:translate-x-1 transition-transform focus:outline-none focus:ring-1 focus:ring-tertiary w-fit" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-tertiary transition-colors hover:translate-x-1 transition-transform focus:outline-none focus:ring-1 focus:ring-tertiary w-fit" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-tertiary transition-colors hover:translate-x-1 transition-transform focus:outline-none focus:ring-1 focus:ring-tertiary w-fit" href="#">Corporate Governance</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-tertiary transition-colors hover:translate-x-1 transition-transform focus:outline-none focus:ring-1 focus:ring-tertiary w-fit" href="#">Institutional Access</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-tertiary transition-colors hover:translate-x-1 transition-transform focus:outline-none focus:ring-1 focus:ring-tertiary w-fit" href="#">Press Room</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-tertiary transition-colors hover:translate-x-1 transition-transform focus:outline-none focus:ring-1 focus:ring-tertiary w-fit" href="#">Contact Advisor</a>
+</div>
+<div class="col-span-1 lg:col-span-4 mt-12 pt-8 border-t border-outline-variant/10">
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">© 2024 Global Executive Network. All rights reserved. Professional Excellence Guaranteed.</p>
+</div>
+</div>
+</footer>
+</body></html>

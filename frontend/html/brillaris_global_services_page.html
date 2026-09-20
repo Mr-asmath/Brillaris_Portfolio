@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Brillaris Global Services</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-high": "#292a27",
+                      "surface-bright": "#383a36",
+                      "secondary-container": "#164f48",
+                      "error-container": "#93000a",
+                      "on-tertiary-fixed-variant": "#5a4312",
+                      "surface-variant": "#343532",
+                      "on-secondary-fixed-variant": "#164f48",
+                      "primary-fixed": "#c5eae3",
+                      "error": "#ffb4ab",
+                      "on-primary-fixed": "#00201d",
+                      "on-secondary-container": "#89bfb6",
+                      "on-primary": "#133632",
+                      "on-error": "#690005",
+                      "on-tertiary-fixed": "#261900",
+                      "primary-container": "#092e2a",
+                      "on-secondary": "#003731",
+                      "surface-container-highest": "#343532",
+                      "primary-fixed-dim": "#a9cec7",
+                      "secondary": "#9bd1c7",
+                      "surface-container-lowest": "#0d0f0c",
+                      "tertiary-fixed-dim": "#e4c285",
+                      "background": "#121411",
+                      "on-background": "#e3e3de",
+                      "surface-container-low": "#1b1c19",
+                      "tertiary": "#e4c285",
+                      "tertiary-container": "#372600",
+                      "surface-dim": "#121411",
+                      "on-surface-variant": "#c1c8c6",
+                      "on-primary-fixed-variant": "#2b4d48",
+                      "on-error-container": "#ffdad6",
+                      "primary": "#a9cec7",
+                      "on-tertiary-container": "#aa8c54",
+                      "surface-container": "#1f201d",
+                      "inverse-surface": "#e3e3de",
+                      "on-secondary-fixed": "#00201c",
+                      "inverse-on-surface": "#30312e",
+                      "inverse-primary": "#436560",
+                      "outline-variant": "#414847",
+                      "on-primary-container": "#749791",
+                      "on-surface": "#e3e3de",
+                      "surface": "#121411",
+                      "outline": "#8b9290",
+                      "secondary-fixed": "#b6ede3",
+                      "on-tertiary": "#412d00",
+                      "surface-tint": "#a9cec7",
+                      "tertiary-fixed": "#ffdea4",
+                      "secondary-fixed-dim": "#9bd1c7"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "container-max": "1280px",
+                      "gutter": "24px",
+                      "margin-desktop": "64px",
+                      "margin-mobile": "20px",
+                      "unit": "8px"
+              },
+              "fontFamily": {
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "display-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "label-caps": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-sm": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill-icon {
+            font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #092E2A; /* Base Obsidian Green */
+            color: #e3e3de;
+        }
+        .card-bg {
+            background-color: #124C45; /* Deep Teal Level 1 */
+            border: 1px solid rgba(79, 143, 120, 0.15); /* Jade subtle border */
+        }
+        .jade-line {
+            background-color: rgba(79, 143, 120, 0.5); /* Jade for connection lines */
+        }
+    </style>
+</head>
+<body class="font-body-lg text-on-surface antialiased overflow-x-hidden min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface/70 dark:bg-surface/70 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-outline-variant/15 flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto md:px-margin-desktop px-margin-mobile">
+<div class="font-display-lg text-headline-sm md:text-headline-md text-on-surface tracking-tighter">
+            GLOBAL STRATEGY
+        </div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="font-label-caps text-label-caps text-on-surface hover:text-tertiary transition-colors transition-all duration-300" href="#">Insights</a>
+<a class="font-label-caps text-label-caps text-tertiary border-b-2 border-tertiary pb-1 opacity-80 scale-95 transition-transform hover:text-tertiary transition-all duration-300" href="#">Solutions</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-tertiary transition-colors transition-all duration-300" href="#">Markets</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-tertiary transition-colors transition-all duration-300" href="#">Network</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-tertiary transition-colors transition-all duration-300" href="#">About</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="hidden md:flex items-center justify-center text-on-surface hover:text-tertiary transition-colors">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<a class="hidden md:inline-flex font-label-caps text-label-caps bg-tertiary text-primary-container px-6 py-3 hover:bg-tertiary/90 transition-all duration-300 shadow-[0_0_15px_rgba(228,194,133,0.1)] hover:shadow-[0_0_20px_rgba(228,194,133,0.3)]" href="#">
+                Contact Us
+            </a>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow pt-32 md:pt-48 pb-32">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-32 relative">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7 z-10">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-8">
+                        Solutions Built Around Your <span class="text-tertiary italic font-normal">Ambition.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-12 border-l-2 border-tertiary pl-6 py-2">
+                        From strategy and technology to partnerships and growth, Brillaris Global helps organizations navigate what's next.
+                    </p>
+<div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+<a class="inline-flex items-center justify-center font-label-caps text-label-caps bg-tertiary text-primary-container px-8 py-4 hover:bg-tertiary/90 transition-all duration-300 shadow-[0_0_15px_rgba(228,194,133,0.1)] hover:shadow-[0_0_20px_rgba(228,194,133,0.3)]" href="#services">
+                            Explore Services
+                        </a>
+<a class="inline-flex items-center justify-center font-label-caps text-label-caps bg-transparent border border-[#4F8F78] text-on-surface px-8 py-4 hover:bg-[#124C45] transition-all duration-300" href="#contact">
+                            Talk to an Expert
+                        </a>
+</div>
+</div>
+<div class="lg:col-span-5 relative mt-16 lg:mt-0">
+<div class="aspect-[4/5] relative overflow-hidden card-bg p-4">
+<img alt="Corporate Architecture" class="w-full h-full object-cover filter brightness-75 contrast-125 grayscale-[20%]" data-alt="High-profile corporate imagery with sophisticated lighting and architectural elements. A modern skyscraper atrium interior at dusk. Deep Obsidian Green and Teal tones dominate, with warm Champagne Gold light reflecting off polished marble floors and structural steel. The mood is executive, ambitious, and globally connected." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpZaG1l-Wef2iabxCbOpUnBUdf6PHwHyD64rp-P70wX9nO2xmvvWIm-ZGhr56o31t_OeY-79Hz9EJDfVQ4MXBgQNPIXKkyVuKUf9Qu2iPZKwEk7eqja_H-8kD6waAYy0MkxHnuc6JGUA4pNejCu5GavPaz9tYNuRr7thueYozoHBaOOX67Y-d6hD4P2rA8ekW_kkhj8cPV_x6COq3bBi4He_-jY-T3cfXMx_ykyWvNmjZGR4VIzJyD"/>
+<!-- Overlay accent -->
+<div class="absolute bottom-0 right-0 w-32 h-32 border-b-2 border-r-2 border-tertiary translate-x-4 translate-y-4 opacity-50"></div>
+</div>
+</div>
+</div>
+<!-- Architectural Background Lines -->
+<div class="absolute top-0 right-0 w-[1px] h-full jade-line opacity-20 hidden lg:block -z-10 translate-x-margin-desktop"></div>
+<div class="absolute top-1/2 left-0 w-full h-[1px] jade-line opacity-20 hidden lg:block -z-10"></div>
+</section>
+<!-- Services Section (Alternating Grid) -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-32 relative" id="services">
+<!-- Vertical Connecting Line through the section -->
+<div class="absolute top-0 bottom-0 left-[24px] md:left-[112px] w-[1px] jade-line opacity-30 hidden md:block z-0"></div>
+<div class="space-y-32">
+<!-- Service 01 -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter relative z-10 group">
+<div class="lg:col-span-4 flex flex-col justify-start">
+<span class="font-headline-md text-display-lg text-tertiary opacity-30 mb-4 group-hover:opacity-100 transition-opacity duration-500">01</span>
+<div class="w-12 h-12 rounded-full border border-[#4F8F78] flex items-center justify-center mb-6 text-tertiary bg-[#124C45]">
+<span class="material-symbols-outlined" data-icon="architecture">architecture</span>
+</div>
+</div>
+<div class="lg:col-span-8 card-bg p-8 md:p-12 hover:border-tertiary/50 transition-colors duration-500">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-6 border-b border-[#4F8F78]/30 pb-4">Business Consulting</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                            Transformative strategies designed to optimize operations, mitigate global risks, and drive sustainable growth across complex enterprise structures.
+                        </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+<ul class="space-y-2 text-on-surface-variant text-body-md font-body-md">
+<li class="flex items-center"><span class="w-1.5 h-1.5 bg-tertiary mr-3 block"></span> Organizational Design</li>
+<li class="flex items-center"><span class="w-1.5 h-1.5 bg-tertiary mr-3 block"></span> Change Management</li>
+<li class="flex items-center"><span class="w-1.5 h-1.5 bg-tertiary mr-3 block"></span> Process Optimization</li>
+</ul>
+<ul class="space-y-2 text-on-surface-variant text-body-md font-body-md">
+<li class="flex items-center"><span class="w-1.5 h-1.5 bg-tertiary mr-3 block"></span> Risk &amp; Compliance</li>
+<li class="flex items-center"><span class="w-1.5 h-1.5 bg-tertiary mr-3 block"></span> Strategy Execution</li>
+</ul>
+</div>
+<a class="inline-flex items-center font-label-caps text-label-caps text-tertiary hover:text-white transition-colors group-hover:gap-4 gap-2 duration-300" href="#">
+                            Explore Service <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Service 02 -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter relative z-10 group">
+<div class="lg:col-span-8 lg:order-1 order-2 card-bg p-8 md:p-12 hover:border-tertiary/50 transition-colors duration-500">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-6 border-b border-[#4F8F78]/30 pb-4">Technology Solutions</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                            Deploying advanced digital architectures and AI-driven platforms to future-proof core business systems and accelerate digital transformation.
+                        </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+<ul class="space-y-2 text-on-surface-variant text-body-md font-body-md">
+<li class="flex items-center"><span class="w-1.5 h-1.5 bg-tertiary mr-3 block"></span> Digital Transformation</li>
+<li class="flex items-center"><span class="w-1.5 h-1.5 bg-tertiary mr-3 block"></span> Enterprise Architecture</li>
+<li class="flex items-center"><span class="w-1.5 h-1.5 bg-tertiary mr-3 block"></span> Cloud Strategy</li>
+</ul>
+<ul class="space-y-2 text-on-surface-variant text-body-md font-body-md">
+<li class="flex items-center"><span class="w-1.5 h-1.5 bg-tertiary mr-3 block"></span> Data Analytics &amp; AI</li>
+<li class="flex items-center"><span class="w-1.5 h-1.5 bg-tertiary mr-3 block"></span> Cybersecurity</li>
+</ul>
+</div>
+<a class="inline-flex items-center font-label-caps text-label-caps text-tertiary hover:text-white transition-colors group-hover:gap-4 gap-2 duration-300" href="#">
+                            Explore Service <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<div class="lg:col-span-4 lg:order-2 order-1 flex flex-col justify-start lg:items-end">
+<span class="font-headline-md text-display-lg text-tertiary opacity-30 mb-4 group-hover:opacity-100 transition-opacity duration-500">02</span>
+<div class="w-12 h-12 rounded-full border border-[#4F8F78] flex items-center justify-center mb-6 text-tertiary bg-[#124C45]">
+<span class="material-symbols-outlined" data-icon="memory">memory</span>
+</div>
+</div>
+</div>
+<!-- Service 03 -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter relative z-10 group">
+<div class="lg:col-span-4 flex flex-col justify-start">
+<span class="font-headline-md text-display-lg text-tertiary opacity-30 mb-4 group-hover:opacity-100 transition-opacity duration-500">03</span>
+<div class="w-12 h-12 rounded-full border border-[#4F8F78] flex items-center justify-center mb-6 text-tertiary bg-[#124C45]">
+<span class="material-symbols-outlined" data-icon="public">public</span>
+</div>
+</div>
+<div class="lg:col-span-8 card-bg p-8 md:p-12 hover:border-tertiary/50 transition-colors duration-500">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-6 border-b border-[#4F8F78]/30 pb-4">Global Business Services</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                            Establishing scalable, high-performance global service centers to centralize operations, reduce costs, and elevate service quality worldwide.
+                        </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+<ul class="space-y-2 text-on-surface-variant text-body-md font-body-md">
+<li class="flex items-center"><span class="w-1.5 h-1.5 bg-tertiary mr-3 block"></span> Shared Services Setup</li>
+<li class="flex items-center"><span class="w-1.5 h-1.5 bg-tertiary mr-3 block"></span> BPO Strategy</li>
+<li class="flex items-center"><span class="w-1.5 h-1.5 bg-tertiary mr-3 block"></span> Global Sourcing</li>
+</ul>
+<ul class="space-y-2 text-on-surface-variant text-body-md font-body-md">
+<li class="flex items-center"><span class="w-1.5 h-1.5 bg-tertiary mr-3 block"></span> Service Delivery Model</li>
+<li class="flex items-center"><span class="w-1.5 h-1.5 bg-tertiary mr-3 block"></span> Continuous Improvement</li>
+</ul>
+</div>
+<a class="inline-flex items-center font-label-caps text-label-caps text-tertiary hover:text-white transition-colors group-hover:gap-4 gap-2 duration-300" href="#">
+                            Explore Service <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Capabilities Grid -->
+<section class="mb-32">
+<div class="w-full bg-[#124C45] border-y border-[#4F8F78]/20 py-24 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">Core Capabilities</h2>
+<div class="w-12 h-0.5 bg-tertiary mx-auto"></div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
+<!-- Cap 1 -->
+<div class="flex flex-col items-center group">
+<div class="w-20 h-20 border border-[#4F8F78]/50 rounded-full flex items-center justify-center mb-6 group-hover:bg-[#092E2A] transition-colors duration-300 relative">
+<span class="material-symbols-outlined text-3xl text-tertiary" data-icon="timeline">timeline</span>
+</div>
+<h3 class="font-label-caps text-label-caps text-on-surface">Strategy</h3>
+</div>
+<!-- Cap 2 -->
+<div class="flex flex-col items-center group">
+<div class="w-20 h-20 border border-[#4F8F78]/50 rounded-full flex items-center justify-center mb-6 group-hover:bg-[#092E2A] transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl text-tertiary" data-icon="change_circle">change_circle</span>
+</div>
+<h3 class="font-label-caps text-label-caps text-on-surface">Transformation</h3>
+</div>
+<!-- Cap 3 -->
+<div class="flex flex-col items-center group">
+<div class="w-20 h-20 border border-[#4F8F78]/50 rounded-full flex items-center justify-center mb-6 group-hover:bg-[#092E2A] transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl text-tertiary" data-icon="devices">devices</span>
+</div>
+<h3 class="font-label-caps text-label-caps text-on-surface">Technology</h3>
+</div>
+<!-- Cap 4 -->
+<div class="flex flex-col items-center group">
+<div class="w-20 h-20 border border-[#4F8F78]/50 rounded-full flex items-center justify-center mb-6 group-hover:bg-[#092E2A] transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl text-tertiary" data-icon="trending_up">trending_up</span>
+</div>
+<h3 class="font-label-caps text-label-caps text-on-surface">Growth</h3>
+</div>
+<!-- Cap 5 -->
+<div class="flex flex-col items-center group">
+<div class="w-20 h-20 border border-[#4F8F78]/50 rounded-full flex items-center justify-center mb-6 group-hover:bg-[#092E2A] transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl text-tertiary" data-icon="groups">groups</span>
+</div>
+<h3 class="font-label-caps text-label-caps text-on-surface">People</h3>
+</div>
+<!-- Cap 6 -->
+<div class="flex flex-col items-center group">
+<div class="w-20 h-20 border border-[#4F8F78]/50 rounded-full flex items-center justify-center mb-6 group-hover:bg-[#092E2A] transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl text-tertiary" data-icon="handshake">handshake</span>
+</div>
+<h3 class="font-label-caps text-label-caps text-on-surface">Partnerships</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Industries Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-32">
+<div class="mb-16 flex flex-col md:flex-row md:items-end justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">Experience Across Industries</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
+                        Deep sector knowledge applied globally to solve specific market challenges.
+                    </p>
+</div>
+<a class="hidden md:inline-flex items-center font-label-caps text-label-caps text-tertiary hover:text-white transition-colors gap-2" href="#">
+                    View All Industries <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
+<!-- Ind 1 -->
+<div class="card-bg p-8 hover:bg-[#164f48] transition-colors flex flex-col justify-between min-h-[240px] group border border-transparent hover:border-tertiary/30 cursor-pointer">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant group-hover:text-tertiary transition-colors" data-icon="computer">computer</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Technology</h3>
+<div class="w-0 h-[1px] bg-tertiary group-hover:w-full transition-all duration-500"></div>
+</div>
+</div>
+<!-- Ind 2 -->
+<div class="card-bg p-8 hover:bg-[#164f48] transition-colors flex flex-col justify-between min-h-[240px] group border border-transparent hover:border-tertiary/30 cursor-pointer">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant group-hover:text-tertiary transition-colors" data-icon="school">school</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Education</h3>
+<div class="w-0 h-[1px] bg-tertiary group-hover:w-full transition-all duration-500"></div>
+</div>
+</div>
+<!-- Ind 3 -->
+<div class="card-bg p-8 hover:bg-[#164f48] transition-colors flex flex-col justify-between min-h-[240px] group border border-transparent hover:border-tertiary/30 cursor-pointer">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant group-hover:text-tertiary transition-colors" data-icon="storefront">storefront</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Retail</h3>
+<div class="w-0 h-[1px] bg-tertiary group-hover:w-full transition-all duration-500"></div>
+</div>
+</div>
+<!-- Ind 4 -->
+<div class="card-bg p-8 hover:bg-[#164f48] transition-colors flex flex-col justify-between min-h-[240px] group border border-transparent hover:border-tertiary/30 cursor-pointer">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant group-hover:text-tertiary transition-colors" data-icon="sports_football">sports_football</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Sports</h3>
+<div class="w-0 h-[1px] bg-tertiary group-hover:w-full transition-all duration-500"></div>
+</div>
+</div>
+<!-- Ind 5 -->
+<div class="card-bg p-8 hover:bg-[#164f48] transition-colors flex flex-col justify-between min-h-[240px] group border border-transparent hover:border-tertiary/30 cursor-pointer">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant group-hover:text-tertiary transition-colors" data-icon="cases">cases</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Professional Services</h3>
+<div class="w-0 h-[1px] bg-tertiary group-hover:w-full transition-all duration-500"></div>
+</div>
+</div>
+<!-- Ind 6 -->
+<div class="card-bg p-8 hover:bg-[#164f48] transition-colors flex flex-col justify-between min-h-[240px] group border border-transparent hover:border-tertiary/30 cursor-pointer">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant group-hover:text-tertiary transition-colors" data-icon="rocket_launch">rocket_launch</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Emerging Businesses</h3>
+<div class="w-0 h-[1px] bg-tertiary group-hover:w-full transition-all duration-500"></div>
+</div>
+</div>
+</div>
+<a class="md:hidden mt-8 inline-flex items-center font-label-caps text-label-caps text-tertiary hover:text-white transition-colors gap-2" href="#">
+                View All Industries <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</section>
+<!-- CTA Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-16" id="contact">
+<div class="bg-[#092E2A] border border-[#4F8F78]/30 p-12 md:p-24 text-center relative overflow-hidden flex flex-col items-center justify-center">
+<!-- Abstract BG Elements -->
+<div class="absolute top-0 right-0 w-64 h-64 border border-tertiary/10 rounded-full translate-x-1/2 -translate-y-1/2"></div>
+<div class="absolute bottom-0 left-0 w-96 h-96 border border-tertiary/5 rounded-full -translate-x-1/3 translate-y-1/3"></div>
+<div class="relative z-10">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-8">
+                        Have A Business Challenge?
+                    </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">
+                        Connect with our global strategy team to explore tailored solutions for your enterprise.
+                    </p>
+<a class="inline-flex items-center justify-center font-label-caps text-label-caps bg-tertiary text-primary-container px-10 py-5 hover:bg-tertiary/90 transition-all duration-300 shadow-[0_0_20px_rgba(228,194,133,0.15)] hover:shadow-[0_0_30px_rgba(228,194,133,0.3)] tracking-wider" href="#">
+                        Talk To Our Team
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest w-full border-t border-outline-variant/10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-20 max-w-container-max mx-auto md:px-margin-desktop px-margin-mobile text-body-md font-body-md">
+<div class="col-span-1 md:col-span-2 mb-8 md:mb-0">
+<div class="font-display-lg text-headline-sm md:text-headline-md text-on-surface mb-6">
+                    GLOBAL STRATEGY
+                </div>
+<p class="text-on-surface-variant max-w-sm mb-6">
+                    Navigating global complexity with precision, strategy, and actionable intelligence.
+                </p>
+<div class="text-on-surface-variant text-sm">
+                    © 2024 Global Strategy Group. All rights reserved.
+                </div>
+</div>
+<div class="col-span-1 flex flex-col space-y-4">
+<h4 class="font-label-caps text-label-caps text-on-surface mb-2">LEGAL</h4>
+<a class="text-on-surface-variant hover:text-on-surface hover:text-tertiary underline-offset-4 hover:underline transition-all duration-200" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-on-surface hover:text-tertiary underline-offset-4 hover:underline transition-all duration-200" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-on-surface hover:text-tertiary underline-offset-4 hover:underline transition-all duration-200" href="#">Compliance</a>
+</div>
+<div class="col-span-1 flex flex-col space-y-4">
+<h4 class="font-label-caps text-label-caps text-on-surface mb-2">COMPANY</h4>
+<a class="text-on-surface-variant hover:text-on-surface hover:text-tertiary underline-offset-4 hover:underline transition-all duration-200" href="#">Global Offices</a>
+<a class="text-on-surface-variant hover:text-on-surface hover:text-tertiary underline-offset-4 hover:underline transition-all duration-200" href="#">Careers</a>
+<a class="text-on-surface-variant hover:text-on-surface hover:text-tertiary underline-offset-4 hover:underline transition-all duration-200" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>

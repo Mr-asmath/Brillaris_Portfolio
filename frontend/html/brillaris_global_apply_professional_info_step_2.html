@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Brillaris Global - Executive Application</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#372600",
+                        "secondary-container": "#164f48",
+                        "inverse-primary": "#436560",
+                        "on-primary-container": "#749791",
+                        "primary-fixed": "#c5eae3",
+                        "on-secondary-fixed": "#00201c",
+                        "primary-container": "#092e2a",
+                        "secondary-fixed-dim": "#9bd1c7",
+                        "primary": "#a9cec7",
+                        "secondary-fixed": "#b6ede3",
+                        "surface-container-lowest": "#0d0f0c",
+                        "on-tertiary-container": "#aa8c54",
+                        "inverse-surface": "#e3e3de",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#164f48",
+                        "surface-bright": "#383a36",
+                        "outline-variant": "#414847",
+                        "surface-container-highest": "#343532",
+                        "background": "#121411",
+                        "secondary": "#9bd1c7",
+                        "error": "#ffb4ab",
+                        "surface-tint": "#a9cec7",
+                        "surface-container": "#1f201d",
+                        "on-surface": "#e3e3de",
+                        "surface-dim": "#121411",
+                        "surface-container-high": "#292a27",
+                        "on-background": "#e3e3de",
+                        "tertiary-fixed": "#ffdea4",
+                        "tertiary": "#e4c285",
+                        "primary-fixed-dim": "#a9cec7",
+                        "inverse-on-surface": "#30312e",
+                        "outline": "#8b9290",
+                        "on-primary-fixed": "#00201d",
+                        "surface-container-low": "#1b1c19",
+                        "surface": "#121411",
+                        "on-primary-fixed-variant": "#2b4d48",
+                        "on-error": "#690005",
+                        "on-secondary-container": "#89bfb6",
+                        "on-tertiary-fixed-variant": "#5a4312",
+                        "tertiary-fixed-dim": "#e4c285",
+                        "on-tertiary-fixed": "#261900",
+                        "on-secondary": "#003731",
+                        "on-primary": "#133632",
+                        "surface-variant": "#343532",
+                        "on-tertiary": "#412d00",
+                        "on-surface-variant": "#c1c8c6",
+                        "error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Inter"],
+                        "body-md": ["Inter"],
+                        "display-lg": ["Playfair Display"],
+                        "body-lg": ["Inter"],
+                        "headline-sm": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .editorial-input {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid theme('colors.on-surface-variant');
+            padding: theme('spacing.unit') 0;
+            color: theme('colors.on-background');
+            transition: border-color 0.3s ease;
+            width: 100%;
+        }
+        .editorial-input:focus {
+            outline: none;
+            box-shadow: none;
+            border-bottom-color: theme('colors.tertiary');
+        }
+        .editorial-input::placeholder {
+            color: theme('colors.outline');
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col relative overflow-x-hidden selection:bg-tertiary selection:text-on-tertiary">
+<!-- Atmospheric Background Pattern -->
+<div class="absolute inset-0 pointer-events-none z-0 opacity-[0.03]" style="background-image: radial-gradient(circle at 2px 2px, theme('colors.primary') 1px, transparent 0); background-size: 32px 32px;"></div>
+<!-- Ambient Glow -->
+<div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-primary-container rounded-full blur-[120px] opacity-30 pointer-events-none z-0"></div>
+<!-- Main Content Canvas (Transactional Flow -> No Global Nav) -->
+<main class="flex-grow flex flex-col items-center justify-center p-margin-mobile md:p-margin-desktop relative z-10 w-full">
+<!-- Brand Anchor -->
+<div class="mb-16 text-center">
+<h1 class="font-display-lg text-headline-sm text-tertiary tracking-widest uppercase">Brillaris Global</h1>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-2 tracking-[0.2em]">Executive Selection</p>
+</div>
+<!-- Form Container -->
+<div class="w-full max-w-[800px] bg-surface-container-low border border-outline-variant/15 p-8 md:p-16 rounded shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)] backdrop-blur-sm">
+<!-- Progress Indicator -->
+<div class="flex items-center justify-between mb-12 relative">
+<div class="absolute left-0 top-1/2 -translate-y-1/2 w-full h-[1px] bg-outline-variant/30 z-0"></div>
+<!-- Step 1: Complete -->
+<div class="relative z-10 flex flex-col items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary-container border border-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<span class="font-label-caps text-label-caps text-primary">Identity</span>
+</div>
+<!-- Step 2: Active -->
+<div class="relative z-10 flex flex-col items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-tertiary border-2 border-background flex items-center justify-center shadow-[0_0_15px_rgba(228,194,133,0.3)]">
+<span class="font-label-caps text-label-caps text-on-tertiary">02</span>
+</div>
+<span class="font-label-caps text-label-caps text-tertiary">Professional</span>
+</div>
+<!-- Step 3: Pending -->
+<div class="relative z-10 flex flex-col items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface border border-outline-variant/50 flex items-center justify-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant">03</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Credentials</span>
+</div>
+</div>
+<!-- Header -->
+<div class="mb-10 text-center md:text-left border-l-2 border-tertiary pl-6">
+<h2 class="font-display-lg text-headline-md md:text-display-lg-mobile text-on-background mb-2">Professional Profile</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">Please detail your current institutional alignment and executive experience to ensure accurate positioning within our global network.</p>
+</div>
+<!-- Form Fields -->
+<form class="space-y-10" onsubmit="event.preventDefault();">
+<!-- Field: Current Organization -->
+<div class="relative group">
+<label class="font-label-caps text-label-caps text-on-surface-variant block mb-2 transition-colors group-focus-within:text-tertiary" for="organization">Current Organization</label>
+<input class="editorial-input font-body-lg text-body-lg" id="organization" name="organization" placeholder="e.g. Goldman Sachs, McKinsey &amp; Company" required="" type="text"/>
+</div>
+<!-- Split Row: Position & Experience -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="relative group">
+<label class="font-label-caps text-label-caps text-on-surface-variant block mb-2 transition-colors group-focus-within:text-tertiary" for="position">Current Position</label>
+<input class="editorial-input font-body-lg text-body-lg" id="position" name="position" placeholder="e.g. Managing Director" required="" type="text"/>
+</div>
+<div class="relative group">
+<label class="font-label-caps text-label-caps text-on-surface-variant block mb-2 transition-colors group-focus-within:text-tertiary" for="experience">Years of Experience</label>
+<div class="relative">
+<input class="editorial-input font-body-lg text-body-lg pr-8" id="experience" max="50" min="0" name="experience" placeholder="0" required="" type="number"/>
+<span class="absolute right-0 top-1/2 -translate-y-1/2 text-on-surface-variant font-body-md">Yrs</span>
+</div>
+</div>
+</div>
+<!-- Field: LinkedIn Profile URL -->
+<div class="relative group">
+<label class="font-label-caps text-label-caps text-on-surface-variant block mb-2 transition-colors group-focus-within:text-tertiary" for="linkedin">LinkedIn Profile URL</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-0 text-outline-variant" style="font-variation-settings: 'FILL' 0;">link</span>
+<input class="editorial-input pl-8 font-body-lg text-body-lg" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/username" required="" type="url"/>
+</div>
+</div>
+<!-- Actions -->
+<div class="pt-8 mt-4 border-t border-outline-variant/15 flex flex-col-reverse md:flex-row items-center justify-between gap-6">
+<button class="w-full md:w-auto font-label-caps text-label-caps px-8 py-4 border border-outline text-on-surface-variant hover:border-primary hover:text-primary transition-all duration-300 rounded flex items-center justify-center gap-2 group" type="button">
+<span class="material-symbols-outlined text-[18px] group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                        Previous Step
+                    </button>
+<button class="w-full md:w-auto font-label-caps text-label-caps px-10 py-4 bg-tertiary text-on-tertiary hover:brightness-110 transition-all duration-300 rounded flex items-center justify-center gap-2 group shadow-[0_4px_14px_rgba(228,194,133,0.15)]" type="submit">
+                        Save &amp; Continue
+                        <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Secure Badge -->
+<div class="mt-8 flex items-center gap-2 text-on-surface-variant opacity-60">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span class="font-label-caps text-label-caps text-[10px]">End-to-End Encrypted Transmission</span>
+</div>
+</main>
+</body></html>

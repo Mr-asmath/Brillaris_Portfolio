@@ -1,0 +1,101 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --tertiary: #e4c285;
+  --secondary-fixed: #b6ede3;
+  --tertiary-fixed-dim: #e4c285;
+  --surface-container-low: #F8F7F2;
+  --surface-dim: #121411;
+  --outline-variant: #414847;
+  --on-secondary-container: #89bfb6;
+  --primary: #a9cec7;
+  --error-container: #93000a;
+  --on-secondary: #003731;
+  --tertiary-fixed: #ffdea4;
+  --on-tertiary-fixed: #261900;
+  --on-error-container: #ffdad6;
+  --surface-container-high: #292a27;
+  --surface: #121411;
+  --on-background: #000000;
+  --on-error: #690005;
+  --on-tertiary-container: #aa8c54;
+  --on-primary: #133632;
+  --error: #ffb4ab;
+  --secondary-fixed-dim: #9bd1c7;
+  --surface-tint: #a9cec7;
+  --surface-container-highest: #343532;
+  --outline: #8b9290;
+  --secondary-container: #164f48;
+  --inverse-surface: #e3e3de;
+  --on-surface: #000000;
+  --on-tertiary-fixed-variant: #5a4312;
+  --on-tertiary: #412d00;
+  --on-tertiary: #092E2A;
+  --on-secondary-fixed-variant: #164f48;
+  --on-secondary-fixed: #00201c;
+  --on-surface-variant: #000000;
+  --inverse-primary: #436560;
+  --on-primary-fixed: #00201d;
+  --background: #FFFFFF;
+  --primary-fixed: #c5eae3;
+  --primary-container: #092E2A;
+  --inverse-on-surface: #30312e;
+  --surface-container-lowest: #FFFFFF;
+  --surface-container: #F8F7F2;
+  --primary-fixed-dim: #a9cec7;
+  --on-primary-container: #FFFFFF;
+  --surface-variant: #343532;
+  --secondary: #9bd1c7;
+  --on-primary-fixed-variant: #2b4d48;
+  --tertiary-container: #372600;
+  --surface-bright: #383a36;
+  --ivory: #F8F7F2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--on-surface);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+::selection {
+  background-color: var(--tertiary);
+  color: var(--on-tertiary);
+}
+
+.text-glow-hover {
+  transition: all 0.3s ease;
+}
+.text-glow-hover:hover {
+  text-shadow: 0 0 10px rgba(228, 194, 133, 0.5);
+  color: var(--tertiary);
+}
+
+.btn-glow-hover {
+  transition: all 0.3s ease;
+}
+.btn-glow-hover:hover {
+  box-shadow: 0 0 15px rgba(228, 194, 133, 0.4);
+  background-color: var(--tertiary-fixed);
+}
+

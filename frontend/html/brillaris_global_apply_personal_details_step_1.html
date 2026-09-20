@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Global Executive Search - Application</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-container": "#372600",
+                      "secondary-container": "#164f48",
+                      "inverse-primary": "#436560",
+                      "on-primary-container": "#749791",
+                      "primary-fixed": "#c5eae3",
+                      "on-secondary-fixed": "#00201c",
+                      "primary-container": "#092e2a",
+                      "secondary-fixed-dim": "#9bd1c7",
+                      "primary": "#a9cec7",
+                      "secondary-fixed": "#b6ede3",
+                      "surface-container-lowest": "#0d0f0c",
+                      "on-tertiary-container": "#aa8c54",
+                      "inverse-surface": "#e3e3de",
+                      "on-error-container": "#ffdad6",
+                      "on-secondary-fixed-variant": "#164f48",
+                      "surface-bright": "#383a36",
+                      "outline-variant": "#414847",
+                      "surface-container-highest": "#343532",
+                      "background": "#121411",
+                      "secondary": "#9bd1c7",
+                      "error": "#ffb4ab",
+                      "surface-tint": "#a9cec7",
+                      "surface-container": "#1f201d",
+                      "on-surface": "#e3e3de",
+                      "surface-dim": "#121411",
+                      "surface-container-high": "#292a27",
+                      "on-background": "#e3e3de",
+                      "tertiary-fixed": "#ffdea4",
+                      "tertiary": "#e4c285",
+                      "primary-fixed-dim": "#a9cec7",
+                      "inverse-on-surface": "#30312e",
+                      "outline": "#8b9290",
+                      "on-primary-fixed": "#00201d",
+                      "surface-container-low": "#1b1c19",
+                      "surface": "#121411",
+                      "on-primary-fixed-variant": "#2b4d48",
+                      "on-error": "#690005",
+                      "on-secondary-container": "#89bfb6",
+                      "on-tertiary-fixed-variant": "#5a4312",
+                      "tertiary-fixed-dim": "#e4c285",
+                      "on-tertiary-fixed": "#261900",
+                      "on-secondary": "#003731",
+                      "on-primary": "#133632",
+                      "surface-variant": "#343532",
+                      "on-tertiary": "#412d00",
+                      "on-surface-variant": "#c1c8c6",
+                      "error-container": "#93000a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "container-max": "1280px",
+                      "gutter": "24px",
+                      "unit": "8px",
+                      "margin-desktop": "64px",
+                      "margin-mobile": "20px"
+              },
+              "fontFamily": {
+                      "label-caps": ["Inter"],
+                      "body-md": ["Inter"],
+                      "display-lg": ["Playfair Display"],
+                      "body-lg": ["Inter"],
+                      "headline-sm": ["Playfair Display"],
+                      "display-lg-mobile": ["Playfair Display"],
+                      "headline-md": ["Playfair Display"]
+              },
+              "fontSize": {
+                      "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                      "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                      "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                      "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-input {
+            background-color: theme('colors.secondary-container');
+            color: theme('colors.on-surface');
+            border: none;
+            border-bottom: 1px solid theme('colors.on-surface');
+            border-radius: 0;
+            padding: 12px 0;
+            transition: border-color 0.3s ease;
+        }
+        .editorial-input:focus {
+            outline: none;
+            box-shadow: none;
+            border-bottom-color: theme('colors.tertiary');
+        }
+        .editorial-input::placeholder {
+            color: theme('colors.on-primary-container');
+        }
+        .progress-line {
+            height: 1px;
+            background-color: theme('colors.outline-variant');
+            flex-grow: 1;
+            margin: 0 16px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar (Shared Component) -->
+<nav class="bg-surface/70 dark:bg-surface/70 backdrop-blur-xl text-primary dark:text-primary font-body-md text-body-md fixed top-0 w-full z-50 border-b border-outline-variant/15 flat no shadows">
+<div class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max mx-auto">
+<div class="font-display-lg text-headline-sm text-tertiary dark:text-tertiary">
+                Global Executive Search
+            </div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-on-surface-variant hover:text-on-surface transition-colors hover:bg-primary-container/50 transition-all duration-300 active:scale-95 transition-transform px-3 py-2 rounded-DEFAULT" href="#">Opportunities</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors hover:bg-primary-container/50 transition-all duration-300 active:scale-95 transition-transform px-3 py-2 rounded-DEFAULT" href="#">Insights</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors hover:bg-primary-container/50 transition-all duration-300 active:scale-95 transition-transform px-3 py-2 rounded-DEFAULT" href="#">Network</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors hover:bg-primary-container/50 transition-all duration-300 active:scale-95 transition-transform px-3 py-2 rounded-DEFAULT" href="#">Advisory</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="hidden md:block text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase tracking-wider transition-colors">Sign In</button>
+<button class="bg-tertiary text-on-tertiary px-6 py-3 font-label-caps text-label-caps uppercase tracking-wider hover:bg-tertiary-fixed-dim transition-colors active:scale-95">Join Elite</button>
+<div class="w-10 h-10 rounded-full overflow-hidden border border-outline-variant/30 hidden md:block">
+<img alt="Executive Profile" class="w-full h-full object-cover" data-alt="A professional headshot of an executive in a dark, moody corporate setting, soft lighting, sophisticated." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq7b6gZrGgD4UDJP8p8DUIsdmL215eko1F_yPIr1lUR6OLZb1kWZkiLxw9gzTM3mFZoaJJKZSjsoMT7Ex8LCOi35WuV_eX39H4FHPae-3a3pKVKktYRf1GoDsxOnLwVCnwgXVQqf53eISCqyv9e16ATmbN7KqelcDe2WYDe5-yd2gj-4f04Iy3MbroqtjcdqRPfGi1gkD9KP-YKo_42Fen25lueu-6aTUFkTtFbuH6T7Yjci2EcCSn"/>
+</div>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[140px] pb-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<div class="max-w-3xl mx-auto">
+<!-- Context Header -->
+<div class="mb-16">
+<a class="inline-flex items-center text-on-surface-variant hover:text-tertiary transition-colors font-label-caps text-label-caps uppercase tracking-wider mb-6 group" href="#">
+<span class="material-symbols-outlined text-[16px] mr-2 group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                    Back to Job Detail
+                </a>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-4">Executive Application</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Chief Executive Officer — London Hub</p>
+</div>
+<!-- Progress Indicator -->
+<div class="mb-20">
+<div class="flex items-center justify-between font-label-caps text-label-caps uppercase tracking-wider mb-4">
+<span class="text-tertiary">01 Personal</span>
+<div class="progress-line opacity-30"></div>
+<span class="text-outline-variant hidden sm:inline">02 Professional</span>
+<div class="progress-line hidden sm:block opacity-10"></div>
+<span class="text-outline-variant hidden md:inline">03 Education</span>
+<div class="progress-line hidden md:block opacity-10"></div>
+<span class="text-outline-variant hidden lg:inline">04 Experience</span>
+</div>
+<!-- Progress Bar visual -->
+<div class="w-full h-[2px] bg-surface-container-high rounded-full overflow-hidden relative">
+<div class="absolute left-0 top-0 h-full bg-tertiary w-[12.5%]"></div>
+</div>
+<div class="text-right mt-2 font-label-caps text-[10px] text-outline-variant tracking-widest uppercase">
+                    Step 1 of 8
+                </div>
+</div>
+<!-- Form Section -->
+<div class="bg-surface-container-low border border-outline-variant/15 p-8 md:p-12 relative overflow-hidden">
+<!-- Subtle decorative connection line -->
+<div class="absolute top-0 left-8 w-[1px] h-full bg-secondary-container/30"></div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-10 border-b border-outline-variant/15 pb-4 inline-block relative z-10">
+                    Personal Information
+                </h2>
+<form class="space-y-12 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="relative group">
+<label class="block font-headline-sm text-headline-sm text-on-surface mb-2 opacity-80 group-focus-within:text-tertiary transition-colors">Full Name</label>
+<input class="editorial-input w-full font-body-lg text-body-lg" placeholder="e.g. Eleanor Vance" type="text"/>
+</div>
+<div class="relative group">
+<label class="block font-headline-sm text-headline-sm text-on-surface mb-2 opacity-80 group-focus-within:text-tertiary transition-colors">Location</label>
+<input class="editorial-input w-full font-body-lg text-body-lg" placeholder="City, Country" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="relative group">
+<label class="block font-headline-sm text-headline-sm text-on-surface mb-2 opacity-80 group-focus-within:text-tertiary transition-colors">Corporate Email</label>
+<input class="editorial-input w-full font-body-lg text-body-lg" placeholder="contact@domain.com" type="email"/>
+</div>
+<div class="relative group">
+<label class="block font-headline-sm text-headline-sm text-on-surface mb-2 opacity-80 group-focus-within:text-tertiary transition-colors">Phone Number</label>
+<input class="editorial-input w-full font-body-lg text-body-lg" placeholder="+1 (555) 000-0000" type="tel"/>
+</div>
+</div>
+<div class="pt-8 flex justify-end">
+<button class="bg-tertiary text-primary-container px-10 py-4 font-label-caps text-label-caps uppercase tracking-wider hover:bg-tertiary-fixed-dim transition-colors active:scale-95 flex items-center group" type="button">
+                            Save &amp; Continue
+                            <span class="material-symbols-outlined ml-3 text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest text-tertiary dark:text-tertiary font-body-md text-body-md w-full py-20 mt-auto border-t border-outline-variant/10 flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-2 lg:col-span-1 mb-10 lg:mb-0">
+<div class="font-display-lg text-headline-md text-tertiary dark:text-tertiary mb-6">
+                    Global Executive Network
+                </div>
+<p class="text-on-surface-variant text-sm pr-4">
+                    © 2024 Global Executive Network. All rights reserved. Professional Excellence Guaranteed.
+                </p>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface mb-6">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-tertiary transition-colors hover:translate-x-1 transition-transform inline-block focus:outline-none focus:ring-1 focus:ring-tertiary" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-tertiary transition-colors hover:translate-x-1 transition-transform inline-block focus:outline-none focus:ring-1 focus:ring-tertiary" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface mb-6">Corporate</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-tertiary transition-colors hover:translate-x-1 transition-transform inline-block focus:outline-none focus:ring-1 focus:ring-tertiary" href="#">Corporate Governance</a></li>
+<li><a class="text-on-surface-variant hover:text-tertiary transition-colors hover:translate-x-1 transition-transform inline-block focus:outline-none focus:ring-1 focus:ring-tertiary" href="#">Institutional Access</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface mb-6">Connect</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-tertiary transition-colors hover:translate-x-1 transition-transform inline-block focus:outline-none focus:ring-1 focus:ring-tertiary" href="#">Press Room</a></li>
+<li><a class="text-on-surface-variant hover:text-tertiary transition-colors hover:translate-x-1 transition-transform inline-block focus:outline-none focus:ring-1 focus:ring-tertiary" href="#">Contact Advisor</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>

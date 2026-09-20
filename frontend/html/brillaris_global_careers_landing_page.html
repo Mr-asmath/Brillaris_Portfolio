@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Careers - Brillaris Global</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary-fixed": "#c5eae3",
+                      "secondary-fixed-dim": "#9bd1c7",
+                      "primary": "#a9cec7",
+                      "on-error": "#690005",
+                      "on-primary": "#133632",
+                      "tertiary-container": "#372600",
+                      "outline-variant": "#414847",
+                      "on-surface-variant": "#c1c8c6",
+                      "outline": "#8b9290",
+                      "inverse-on-surface": "#30312e",
+                      "surface-container-highest": "#343532",
+                      "on-tertiary-container": "#aa8c54",
+                      "on-secondary-fixed": "#00201c",
+                      "secondary": "#9bd1c7",
+                      "on-secondary-fixed-variant": "#164f48",
+                      "tertiary-fixed": "#ffdea4",
+                      "inverse-primary": "#436560",
+                      "on-secondary": "#003731",
+                      "error-container": "#93000a",
+                      "surface-dim": "#121411",
+                      "surface-container": "#1f201d",
+                      "surface": "#121411",
+                      "inverse-surface": "#e3e3de",
+                      "secondary-container": "#164f48",
+                      "on-secondary-container": "#89bfb6",
+                      "surface-tint": "#a9cec7",
+                      "on-tertiary-fixed-variant": "#5a4312",
+                      "surface-container-low": "#1b1c19",
+                      "primary-fixed-dim": "#a9cec7",
+                      "secondary-fixed": "#b6ede3",
+                      "tertiary": "#e4c285",
+                      "on-tertiary": "#412d00",
+                      "on-background": "#e3e3de",
+                      "on-primary-container": "#749791",
+                      "surface-container-lowest": "#0d0f0c",
+                      "tertiary-fixed-dim": "#e4c285",
+                      "on-error-container": "#ffdad6",
+                      "on-surface": "#e3e3de",
+                      "on-primary-fixed-variant": "#2b4d48",
+                      "primary-container": "#092e2a",
+                      "on-tertiary-fixed": "#261900",
+                      "surface-container-high": "#292a27",
+                      "surface-bright": "#383a36",
+                      "on-primary-fixed": "#00201d",
+                      "background": "#121411",
+                      "error": "#ffb4ab",
+                      "surface-variant": "#343532"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "container-max": "1280px",
+                      "gutter": "24px",
+                      "margin-desktop": "64px",
+                      "unit": "8px",
+                      "margin-mobile": "20px"
+              },
+              "fontFamily": {
+                      "headline-sm": [
+                              "Playfair Display"
+                      ],
+                      "display-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "label-caps": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .network-pattern {
+            background-image: radial-gradient(circle at center, rgba(79, 143, 120, 0.05) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+        .btn-primary {
+            @apply bg-tertiary text-on-tertiary px-8 py-3 font-label-caps text-label-caps tracking-widest uppercase transition-all duration-300 hover:shadow-[0_0_15px_rgba(228,194,133,0.3)] flex items-center justify-center gap-2;
+        }
+        .btn-secondary {
+            @apply border border-tertiary text-tertiary px-8 py-3 font-label-caps text-label-caps tracking-widest uppercase transition-all duration-300 hover:bg-tertiary/10 flex items-center justify-center gap-2;
+        }
+        .jade-glow {
+            box-shadow: 0 0 20px rgba(79, 143, 120, 0.1);
+        }
+        .glass-panel {
+            @apply bg-primary-container/70 backdrop-blur-xl border border-secondary-container/30;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-primary-container/70 backdrop-blur-xl border-b border-outline-variant/10 flat no shadows">
+<div class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max mx-auto">
+<!-- Brand Logo -->
+<a class="font-headline-sm text-headline-sm tracking-tighter text-on-surface" href="#">Brillaris Global</a>
+<!-- Navigation Links (Desktop) -->
+<div class="hidden md:flex space-x-8 items-center h-full">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors duration-300 h-full flex items-center" href="#">Strategy</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors duration-300 h-full flex items-center" href="#">Global Insights</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors duration-300 h-full flex items-center" href="#">Network</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors duration-300 h-full flex items-center" href="#">Executive Partners</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors duration-300 h-full flex items-center" href="#">Archives</a>
+</div>
+<!-- Trailing Action -->
+<div class="hidden md:flex items-center gap-6">
+<!-- Search Icon -->
+<button aria-label="Search" class="text-on-surface hover:text-tertiary transition-colors">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'wght' 300;">search</span>
+</button>
+<a class="font-label-caps text-label-caps text-tertiary border border-tertiary/50 px-5 py-2 hover:bg-tertiary/10 transition-colors duration-300" href="#">Private Office</a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative w-full h-[921px] min-h-[600px] flex items-center justify-center pt-20">
+<!-- Background Image with Overlay -->
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="A cinematic, wide-angle shot of a diverse group of highly professional corporate executives standing together in a modern, sunlit glass-walled boardroom. The environment is extremely premium, with breathtaking city views in the background. Lighting is high-end editorial, dramatic yet natural, casting sophisticated shadows and highlighting the luxurious textures of their tailored suits. The overall mood is powerful, ambitious, and globally influential, adhering to a prestigious Obsidian Green and subtle Champagne Gold color palette." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCUmUnmmg7CFw9aOy4dnLeQl-e1ifdjfuMPO8eU-EZmgvRnE5E2P4sRF189rltw6QRh12IsDhjbnBMhuyTyk1jgj1ThVuVolnmThB0Y9j36yH-KMAFF-O4aLiOxxG6nYKIgsw356AU7oJiBsoWIeLPUEzOcvqYHUK8MPnXgltqSGlOoh61fheob9x0RUucvyPhyGTOBhft9jkw8fpI2_MssG1p3aJGJwhmJwFw4vnE-bdHydL14uWAf')"></div>
+<!-- Gradient Overlay for readability -->
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/30"></div>
+<div class="absolute inset-0 bg-primary-container/20 mix-blend-multiply"></div>
+</div>
+<!-- Hero Content -->
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center md:text-left flex flex-col md:items-start items-center">
+<div class="max-w-3xl glass-panel p-8 md:p-12 jade-glow">
+<div class="flex items-center gap-3 mb-6">
+<span class="h-[1px] w-12 bg-tertiary block"></span>
+<span class="font-label-caps text-label-caps text-tertiary uppercase tracking-widest">Careers</span>
+</div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6 leading-tight">
+                    Build Your Future With Brillaris Global.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl">
+                    Bring your ideas, ambition and expertise to a growing global organization.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="btn-primary" href="#open-positions">
+                        View Opportunities
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</header>
+</body></html>

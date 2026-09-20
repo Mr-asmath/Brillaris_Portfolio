@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Brillaris Global | Building Businesses. Creating Global Impact.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary": "#e4c285",
+                      "secondary-fixed": "#b6ede3",
+                      "tertiary-fixed-dim": "#e4c285",
+                      "surface-container-low": "#1b1c19",
+                      "surface-dim": "#121411",
+                      "outline-variant": "#414847",
+                      "on-secondary-container": "#89bfb6",
+                      "primary": "#a9cec7",
+                      "error-container": "#93000a",
+                      "on-secondary": "#003731",
+                      "tertiary-fixed": "#ffdea4",
+                      "on-tertiary-fixed": "#261900",
+                      "on-error-container": "#ffdad6",
+                      "surface-container-high": "#292a27",
+                      "surface": "#121411",
+                      "on-background": "#e3e3de",
+                      "on-error": "#690005",
+                      "on-tertiary-container": "#aa8c54",
+                      "on-primary": "#133632",
+                      "error": "#ffb4ab",
+                      "secondary-fixed-dim": "#9bd1c7",
+                      "surface-tint": "#a9cec7",
+                      "surface-container-highest": "#343532",
+                      "outline": "#8b9290",
+                      "secondary-container": "#164f48",
+                      "inverse-surface": "#e3e3de",
+                      "on-surface": "#e3e3de",
+                      "on-tertiary-fixed-variant": "#5a4312",
+                      "on-tertiary": "#412d00",
+                      "on-secondary-fixed-variant": "#164f48",
+                      "on-secondary-fixed": "#00201c",
+                      "on-surface-variant": "#c1c8c6",
+                      "inverse-primary": "#436560",
+                      "on-primary-fixed": "#00201d",
+                      "background": "#121411",
+                      "primary-fixed": "#c5eae3",
+                      "primary-container": "#092e2a",
+                      "inverse-on-surface": "#30312e",
+                      "surface-container-lowest": "#0d0f0c",
+                      "surface-container": "#1f201d",
+                      "primary-fixed-dim": "#a9cec7",
+                      "on-primary-container": "#749791",
+                      "surface-variant": "#343532",
+                      "secondary": "#9bd1c7",
+                      "on-primary-fixed-variant": "#2b4d48",
+                      "tertiary-container": "#372600",
+                      "surface-bright": "#383a36"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "container-max": "1280px",
+                      "margin-desktop": "64px",
+                      "unit": "8px",
+                      "gutter": "24px",
+                      "margin-mobile": "20px"
+              },
+              "fontFamily": {
+                      "headline-sm": [
+                              "Playfair Display"
+                      ],
+                      "label-caps": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "display-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-glow-hover:hover {
+            text-shadow: 0 0 10px rgba(228, 194, 133, 0.5);
+        }
+        .btn-glow-hover:hover {
+            box-shadow: 0 0 15px rgba(228, 194, 133, 0.4);
+        }
+        .nav-scrolled {
+            background-color: rgba(9, 46, 42, 0.95) !important;
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(79, 143, 120, 0.15);
+        }
+        .pulse-dot {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(79, 143, 120, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(79, 143, 120, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(79, 143, 120, 0); }
+        }
+        .glass-card {
+            background: rgba(18, 76, 69, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(79, 143, 120, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-tertiary selection:text-on-tertiary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 transition-all duration-300 bg-surface/70 dark:bg-surface/70 backdrop-blur-xl border-b border-outline-variant/15 text-tertiary font-label-caps text-label-caps" id="mainNav">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-4">
+<img alt="GLOBAL STRATEGY Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpxuZOtl7V3I9OgBD544OSTENVJkUr73BZnVbjnrgZ8xkYOwM19Yh8WjwIqk8y452R_9FvABDEWTr-ahyJKD4Kh7Cgqr2vDHfA5YPf2I1-SjMwoby4wkyu2dJ1bqIMwFEml6EQSsdU3ztUv6gn5w2XmT9Ui0QDuZZM7p3tqgn6m0P6OaMuPSidyJHeH0MpYTaWCAmX1WPRHh60hIsBut4aEgjuxx20nEMJmxsI3pehen_1KjwtpRlK"/>
+<span class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface tracking-tighter hidden lg:block text-[24px]">GLOBAL STRATEGY</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface hover:text-tertiary transition-colors hover:text-tertiary transition-all duration-300" href="#">Insights</a>
+<a class="text-on-surface hover:text-tertiary transition-colors hover:text-tertiary transition-all duration-300" href="#">Solutions</a>
+<a class="text-on-surface hover:text-tertiary transition-colors hover:text-tertiary transition-all duration-300" href="#">Markets</a>
+<a class="text-on-surface hover:text-tertiary transition-colors hover:text-tertiary transition-all duration-300" href="#">Network</a>
+<a class="text-on-surface hover:text-tertiary transition-colors hover:text-tertiary transition-all duration-300" href="#">About</a>
+</div>
+<div class="flex items-center gap-6">
+<button aria-label="Search" class="hidden md:block text-on-surface hover:text-tertiary transition-colors">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</button>
+<button class="hidden md:block text-on-surface hover:text-tertiary transition-colors">Login</button>
+<a class="bg-tertiary text-on-tertiary px-6 py-2.5 rounded hover:bg-tertiary-fixed transition-colors btn-glow-hover flex items-center gap-2 Active: opacity-80 scale-95 transition-transform" href="#">
+                    Contact Us
+                </a>
+<button aria-label="Menu" class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Cinematic office showing global business professionals interacting with advanced holographic data maps" class="w-full h-full object-cover opacity-40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBawEimBL445fFOHLMMOWJcx8orN4eW-ame9FAGU4DcVWYSZhyis90CTIgQ76uxStqrz3WSyqB9dNASIoLaWl6GlLOloWqUG_SKznII6D28zHhluBvnkYuCuY7Md6OYsOoVhjgsQMAFu9OUjN6FCgI6v2bAYyKqjCQOAfDtAJbMgorUbkjlE4AhZLv1O0WGQkvPyzI09lcWPrBznwEDfFJuj4xcCex9Fys18CXcAf-_fgYN41LEU1AI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center mt-16">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6 max-w-4xl mx-auto leading-tight">
+                Building Businesses.<br/>
+<span class="text-tertiary">Creating Global Impact.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10">
+                Connecting vision, people and opportunity through innovative solutions, strategic partnerships and future-ready services.
+            </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="w-full sm:w-auto bg-tertiary text-on-tertiary px-8 py-4 rounded font-label-caps text-label-caps hover:bg-tertiary-fixed transition-colors btn-glow-hover flex items-center justify-center gap-2" href="#services">
+                    Explore Our Services
+                    <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<a class="w-full sm:w-auto border border-outline px-8 py-4 rounded font-label-caps text-label-caps text-on-surface hover:border-tertiary hover:text-tertiary transition-colors flex items-center justify-center" href="#partner">
+                    Partner With Us
+                </a>
+</div>
+</div>
+</header>
+<!-- Trust Metrics -->
+<section class="py-16 bg-surface-container-lowest border-y border-outline-variant/10 relative z-20">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+<div class="flex flex-col items-center">
+<div class="font-display-lg text-display-lg-mobile md:text-display-lg text-tertiary flex items-center gap-1 mb-2">
+<span class="counter" data-target="15">0</span><span class="text-[40px]">+</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Markets</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="font-display-lg text-display-lg-mobile md:text-display-lg text-tertiary flex items-center gap-1 mb-2">
+<span class="counter" data-target="50">0</span><span class="text-[40px]">+</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Strategic Partners</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="font-display-lg text-display-lg-mobile md:text-display-lg text-tertiary flex items-center gap-1 mb-2">
+<span class="counter" data-target="10">0</span><span class="text-[40px]">K+</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">People Connected</span>
+</div>
+<div class="flex flex-col items-center relative">
+<div class="font-display-lg text-display-lg-mobile md:text-display-lg text-tertiary flex items-center gap-1 mb-2">
+<span class="counter" data-target="98">0</span><span class="text-[40px]">%</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Client Satisfaction</span>
+<div class="absolute top-2 right-4 w-2 h-2 rounded-full bg-[#4F8F78] pulse-dot"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest w-full border-t border-outline-variant/10 text-tertiary font-body-md text-body-md">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-20 max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1 mb-8 md:mb-0">
+<div class="font-display-lg text-display-lg-mobile md:text-[32px] text-on-surface mb-4">GLOBAL STRATEGY</div>
+<p class="text-on-surface-variant text-sm mt-4">© 2024 Global Strategy Group. All rights reserved.</p>
+</div>
+<div class="col-span-1 flex flex-col gap-4">
+<a class="text-on-surface-variant hover:text-on-surface hover:text-tertiary underline-offset-4 hover:underline transition-all duration-200" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-on-surface hover:text-tertiary underline-offset-4 hover:underline transition-all duration-200" href="#">Terms of Service</a>
+</div>
+<div class="col-span-1 flex flex-col gap-4">
+<a class="text-on-surface-variant hover:text-on-surface hover:text-tertiary underline-offset-4 hover:underline transition-all duration-200" href="#">Compliance</a>
+<a class="text-on-surface-variant hover:text-on-surface hover:text-tertiary underline-offset-4 hover:underline transition-all duration-200" href="#">Global Offices</a>
+</div>
+<div class="col-span-1 flex flex-col gap-4">
+<a class="text-on-surface-variant hover:text-on-surface hover:text-tertiary underline-offset-4 hover:underline transition-all duration-200" href="#">Careers</a>
+</div>
+</div>
+</footer>
+<script>
+        // Navbar Scroll Effect
+        const nav = document.getElementById('mainNav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('nav-scrolled');
+            } else {
+                nav.classList.remove('nav-scrolled');
+            }
+        });
+
+        // Counter Animation
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200;
+
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const inc = target / speed;
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + inc);
+                        setTimeout(updateCount, 10);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCount();
+            });
+        };
+
+        // Trigger counters when in view
+        const observerOptions = {
+            threshold: 0.5
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelector('.py-16').querySelectorAll('.counter').forEach(c => {
+             // Just trigger them for now on load if near top
+             animateCounters();
+        });
+
+    </script>
+</body></html>

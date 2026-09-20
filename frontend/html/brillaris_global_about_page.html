@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Brillaris Global - Brillaris Global Advisory</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#261900",
+                        "on-tertiary-fixed-variant": "#5a4312",
+                        "surface-container-highest": "#343532",
+                        "background": "#121411",
+                        "primary-fixed": "#c5eae3",
+                        "surface": "#121411",
+                        "surface-tint": "#a9cec7",
+                        "secondary-container": "#164f48",
+                        "tertiary-container": "#372600",
+                        "primary": "#a9cec7",
+                        "on-secondary-fixed": "#00201c",
+                        "error-container": "#93000a",
+                        "inverse-surface": "#e3e3de",
+                        "on-tertiary": "#412d00",
+                        "primary-container": "#092e2a",
+                        "surface-variant": "#343532",
+                        "secondary-fixed-dim": "#9bd1c7",
+                        "surface-dim": "#121411",
+                        "surface-bright": "#383a36",
+                        "on-primary": "#133632",
+                        "on-primary-fixed": "#00201d",
+                        "on-primary-fixed-variant": "#2b4d48",
+                        "inverse-on-surface": "#30312e",
+                        "secondary-fixed": "#b6ede3",
+                        "on-secondary-container": "#89bfb6",
+                        "tertiary-fixed": "#ffdea4",
+                        "on-tertiary-container": "#aa8c54",
+                        "secondary": "#9bd1c7",
+                        "outline": "#8b9290",
+                        "surface-container-lowest": "#0d0f0c",
+                        "on-secondary-fixed-variant": "#164f48",
+                        "on-background": "#e3e3de",
+                        "primary-fixed-dim": "#a9cec7",
+                        "tertiary-fixed-dim": "#e4c285",
+                        "on-secondary": "#003731",
+                        "on-error": "#690005",
+                        "tertiary": "#e4c285",
+                        "on-primary-container": "#749791",
+                        "inverse-primary": "#436560",
+                        "surface-container-high": "#292a27",
+                        "outline-variant": "#414847",
+                        "surface-container": "#1f201d",
+                        "surface-container-low": "#1b1c19",
+                        "on-surface": "#e3e3de",
+                        "on-error-container": "#ffdad6",
+                        "on-surface-variant": "#c1c8c6",
+                        "error": "#ffb4ab"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "label-caps": ["Inter"],
+                        "headline-sm": ["Playfair Display"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .timeline-scroll::-webkit-scrollbar { display: none; }
+        .timeline-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+        .glass-panel {
+            background: rgba(18, 76, 69, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-tertiary selection:text-on-tertiary">
+<!-- TopNavBar -->
+<header class="bg-primary-container/70 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-outline-variant/10 transition-all duration-300" id="main-nav">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<a class="font-headline-sm text-headline-sm tracking-tighter text-on-surface" href="#">Brillaris Global</a>
+<nav class="hidden md:flex items-center gap-8 font-label-caps text-label-caps">
+<a class="text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors duration-300" href="#">Strategy</a>
+<a class="text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors duration-300" href="#">Global Insights</a>
+<a class="text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors duration-300" href="#">Network</a>
+<a class="text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors duration-300" href="#">Executive Partners</a>
+<a class="text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors duration-300" href="#">Archives</a>
+</nav>
+<div class="flex items-center gap-6">
+<button class="hidden md:flex items-center gap-2 text-on-surface-variant hover:text-tertiary transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">search</span>
+</button>
+<a class="hidden md:inline-flex items-center justify-center bg-tertiary text-on-tertiary font-label-caps text-label-caps px-6 py-3 rounded hover:bg-tertiary-fixed transition-colors" href="#">
+                    Private Office
+                </a>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center justify-center overflow-hidden pt-20">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-background/60 z-10"></div>
+<div class="w-full h-full bg-cover bg-center" data-alt="Cinematic wide shot of a modern, high-end corporate boardroom with floor-to-ceiling windows overlooking a global metropolis at twilight. Soft ivory lighting contrasts with deep obsidian green shadows, exuding prestige and vision." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCQ2E-UU_qH_lEdh-lVdiJgBrj5I_tcFT_c8MSJVTBHow4Cja-o5qSRNaYEIeRHNmjP9mLdMIzmSS4ezEhQhVc8AeRmL4CNgFthpoXSY37yiLvHlieuJY2osLo38L932g1tuAbGg5jcaPppRJf9bUsCQOxZyrKZqW0FyKvMZ5yqBTX77tSt8W1dXUm5VMJpuIaf9grmgzHvPDHEZgBHJbRQHoW6AfCFeu5m7VlXVfPZeR3uNMvSZZzP')"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center mt-20">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6 max-w-4xl mx-auto">
+                    Driven By Vision.<br/>
+<span class="text-tertiary">Defined By Impact.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+                    Brillaris Global brings together vision, people, technology and strategic opportunity to build meaningful long-term impact.
+                </p>
+<div class="mt-12">
+<span class="inline-block w-px h-24 bg-tertiary/50"></span>
+</div>
+</div>
+</section>
+<!-- Company Story -->
+<section class="py-24 md:py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 md:col-start-1 relative">
+<div class="aspect-[4/5] relative rounded overflow-hidden border border-secondary-container/30">
+<img class="w-full h-full object-cover" data-alt="Close up architectural detail of a modern corporate skyscraper interior, featuring sleek lines, dark teal and obsidian materials, accented with champagne gold fixtures, conveying execution and excellence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD1yPipbOIduVI38bZbxiS40jznqxa9bM3NT48dIvogOBCnP5RPS-_RRi32ls7SUgTQq0qa6m0MdzQeCW2wADOB8o27CESDEklR0pzA-5KvVeN1I48bAktFmrgyGAvP2AKYyr-OMzSpo2j0CRzHQErfdkNrdUIYkD-Ug6z9E-qXFwZBLbrrZgNIQihC4V7IGRnPu7Hlbvc13bTCVVcpXy6c8BHsmT1LNLwyhvdf5BscyPqpIzXiaXQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent"></div>
+</div>
+</div>
+<div class="md:col-span-5 md:col-start-7 mt-12 md:mt-0">
+<span class="font-label-caps text-label-caps text-tertiary tracking-widest uppercase mb-4 block">Our Story</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-8">Where Vision Meets Execution</h2>
+<div class="space-y-6 text-on-surface-variant font-body-md">
+<p>
+                            Founded on the principle that true value is created at the intersection of strategic foresight and disciplined execution, Brillaris Global has evolved into a premier advisory firm for the modern era.
+                        </p>
+<p>
+                            We navigate complex global markets, identifying opportunities that others miss. Our approach is deeply analytical yet profoundly human, recognizing that behind every data point is a relationship, a community, and a potential legacy.
+                        </p>
+<p>
+                            Through rigorous methodology and an unparalleled network of executive partners, we transform ambitious goals into sustainable realities, setting new benchmarks for institutional excellence.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Vision & Mission Split -->
+<section class="grid grid-cols-1 md:grid-cols-2">
+<!-- Vision -->
+<div class="bg-inverse-surface text-background py-24 px-margin-mobile md:px-margin-desktop flex flex-col justify-center">
+<div class="max-w-xl ml-auto md:mr-12">
+<span class="font-label-caps text-label-caps text-on-tertiary-fixed-variant tracking-widest uppercase mb-6 block">Our Vision</span>
+<p class="font-headline-sm text-headline-sm md:text-[36px] md:leading-[1.4] text-background font-medium">
+                        To build a globally connected ecosystem where businesses, people and opportunities grow together.
+                    </p>
+</div>
+</div>
+<!-- Mission -->
+<div class="bg-secondary-container text-on-surface py-24 px-margin-mobile md:px-margin-desktop flex flex-col justify-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#4F8F78 1px, transparent 1px); background-size: 32px 32px;"></div>
+<div class="max-w-xl mr-auto md:ml-12 relative z-10">
+<span class="font-label-caps text-label-caps text-tertiary tracking-widest uppercase mb-6 block">Our Mission</span>
+<p class="font-headline-sm text-headline-sm md:text-[36px] md:leading-[1.4] text-on-surface font-medium">
+                        To deliver innovative, reliable and human-centered solutions that create measurable value.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Values Bento Grid -->
+<section class="py-24 md:py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<span class="font-label-caps text-label-caps text-tertiary tracking-widest uppercase mb-4 block">Core Principles</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Our Values</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Value 1 -->
+<div class="bg-surface-container border border-secondary-container/20 p-8 hover:border-tertiary/30 transition-colors duration-300 md:col-span-2 md:row-span-2 flex flex-col justify-end min-h-[300px] relative overflow-hidden group">
+<div class="absolute top-8 right-8 text-tertiary opacity-50 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-4xl">verified_user</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Integrity</h3>
+<p class="text-on-surface-variant font-body-md max-w-md">Uncompromising ethical standards and transparency in every interaction, building absolute trust with our partners.</p>
+</div>
+<!-- Value 2 -->
+<div class="bg-surface-container border border-secondary-container/20 p-8 hover:border-tertiary/30 transition-colors duration-300 relative group min-h-[200px]">
+<div class="absolute top-6 right-6 text-secondary opacity-50 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-3xl">lightbulb</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 mt-8">Innovation</h3>
+<p class="text-on-surface-variant font-body-md text-sm">Pioneering forward-thinking solutions to complex global challenges.</p>
+</div>
+<!-- Value 3 -->
+<div class="bg-surface-container border border-secondary-container/20 p-8 hover:border-tertiary/30 transition-colors duration-300 relative group min-h-[200px]">
+<div class="absolute top-6 right-6 text-secondary opacity-50 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-3xl">military_tech</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 mt-8">Excellence</h3>
+<p class="text-on-surface-variant font-body-md text-sm">A relentless pursuit of superior quality and institutional rigor.</p>
+</div>
+<!-- Value 4 -->
+<div class="bg-surface-container border border-secondary-container/20 p-8 hover:border-tertiary/30 transition-colors duration-300 relative group min-h-[200px]">
+<div class="absolute top-6 right-6 text-secondary opacity-50 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-3xl">handshake</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 mt-8">Collaboration</h3>
+<p class="text-on-surface-variant font-body-md text-sm">Fostering synergistic partnerships across disciplines and borders.</p>
+</div>
+<!-- Value 5 -->
+<div class="bg-surface-container border border-secondary-container/20 p-8 hover:border-tertiary/30 transition-colors duration-300 relative group min-h-[200px]">
+<div class="absolute top-6 right-6 text-secondary opacity-50 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-3xl">diversity_3</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 mt-8">People First</h3>
+<p class="text-on-surface-variant font-body-md text-sm">Investing in the growth, well-being, and potential of our human capital.</p>
+</div>
+<!-- Value 6 -->
+<div class="bg-surface-container border border-secondary-container/20 p-8 hover:border-tertiary/30 transition-colors duration-300 md:col-span-2 relative group flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Impact</h3>
+<p class="text-on-surface-variant font-body-md max-w-lg">Delivering measurable, lasting value that transcends the immediate transaction.</p>
+</div>
+<div class="hidden md:block text-tertiary opacity-50 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-5xl">public</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Leadership -->
+<section class="py-24 bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="mb-16 md:flex justify-between items-end border-b border-outline-variant/20 pb-8">
+<div>
+<span class="font-label-caps text-label-caps text-tertiary tracking-widest uppercase mb-4 block">The Team</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Leadership With Purpose</h2>
+</div>
+<a class="hidden md:inline-flex items-center gap-2 text-tertiary font-label-caps hover:text-tertiary-fixed-dim transition-colors mt-4 md:mt-0" href="#">
+                        View All Executives <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Leader 1 -->
+<div class="flex flex-col sm:flex-row gap-8 group">
+<div class="w-full sm:w-48 h-64 shrink-0 overflow-hidden rounded bg-surface-container border border-outline-variant/10">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Professional studio portrait of a distinguished male executive in his 50s, wearing a tailored dark navy suit against a deep obsidian background. Lighting is dramatic yet professional, highlighting wisdom and authority." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvhQaAtnziT28oJgkhU12u5EgfWW6_GyxkzUJDHk6uFt6IpBfy7omEqRFjkrkzbKlWhAIQ_dmY32tREHawtJQq0tsHOxo4DmXibrSjPsI5-Y-3RViJ37_DrkhERUynMgywZtlBD7-tPoOhLT0tQmiMBTvVTgDQFnKJ5VejMYf0h4XSuVAMXQy6V_jZikSlx2BeeMHBzBFoAwMYEindzQK5LIZWkRcnyaDhrNtAF2Ho5O-_b0LHVmoe"/>
+</div>
+<div class="flex flex-col justify-center">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Alexander Brillaris</h3>
+<p class="font-label-caps text-label-caps text-tertiary mb-4">Chief Executive Officer</p>
+<p class="text-on-surface-variant font-body-md mb-6 line-clamp-3">
+                                With over two decades of experience in international finance and strategic advisory, Alexander guides the firm's overarching global vision and institutional partnerships.
+                            </p>
+<a class="text-outline hover:text-tertiary transition-colors w-fit" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+</div>
+</div>
+<!-- Leader 2 -->
+<div class="flex flex-col sm:flex-row gap-8 group">
+<div class="w-full sm:w-48 h-64 shrink-0 overflow-hidden rounded bg-surface-container border border-outline-variant/10">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Professional studio portrait of a confident female executive in her 40s, wearing elegant corporate attire against a dark teal background. Lighting is soft yet defined, conveying intelligence and leadership capability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqzD1iIN1GZxm4ZkkwGxciK5TkJoL1W_H6msSPVv0fHxcA6c49AR6R4sg_lOaNWeLg95IbOmKduxv_CnVhOOUZe7APhhlm6uFEl6b6GJXfiosUXJGlhkZO2uErhqCi54hWb7V8Umwu4a3DtmLMqDZK9U1orH9uuADXe9oC_ZPCKlukEmFbAcOTj41TsAVW6f5tl8NohzKzykL3ReSoHKWajq5I4TH3bJy2Ww8zd166ApHYmVFV1jMi"/>
+</div>
+<div class="flex flex-col justify-center">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Elena Vance</h3>
+<p class="font-label-caps text-label-caps text-tertiary mb-4">Managing Director</p>
+<p class="text-on-surface-variant font-body-md mb-6 line-clamp-3">
+                                Elena leads the global execution strategy, specializing in cross-border operational integration and driving technological innovation within the firm's portfolio.
+                            </p>
+<a class="text-outline hover:text-tertiary transition-colors w-fit" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Milestones Timeline -->
+<section class="py-24 md:py-32 overflow-hidden bg-background relative">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-16">
+<h2 class="font-headline-md text-headline-md text-on-surface">Our Journey</h2>
+</div>
+<div class="relative max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Timeline Line -->
+<div class="absolute top-1/2 left-0 w-full h-px bg-secondary-container/50 -translate-y-1/2 hidden md:block"></div>
+<div class="flex overflow-x-auto timeline-scroll snap-x snap-mandatory gap-8 pb-12 md:pb-0 pt-8 relative z-10">
+<!-- Milestone 1 -->
+<div class="shrink-0 w-72 md:w-80 snap-start relative group">
+<div class="hidden md:block absolute top-[50%] left-0 w-full h-px bg-tertiary origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 z-0"></div>
+<div class="hidden md:block absolute top-[50%] left-6 w-3 h-3 rounded-full bg-tertiary -translate-y-1/2 z-10 shadow-[0_0_10px_rgba(201,169,110,0.5)]"></div>
+<div class="md:pb-16 md:pt-0 pt-0 pb-0 flex flex-col md:justify-end h-full">
+<span class="font-display-lg-mobile text-display-lg-mobile text-surface-container-highest font-bold leading-none mb-2 block group-hover:text-tertiary/20 transition-colors">2020</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Foundation</h4>
+<p class="text-on-surface-variant font-body-md text-sm">Establishment of Brillaris Global Advisory with a core focus on institutional strategy.</p>
+</div>
+</div>
+<!-- Milestone 2 -->
+<div class="shrink-0 w-72 md:w-80 snap-start relative group">
+<div class="hidden md:block absolute top-[50%] left-0 w-full h-px bg-tertiary origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 z-0"></div>
+<div class="hidden md:block absolute top-[50%] left-6 w-3 h-3 rounded-full bg-surface border-2 border-tertiary -translate-y-1/2 z-10 group-hover:bg-tertiary transition-colors"></div>
+<div class="md:pt-16 md:pb-0 flex flex-col justify-start h-full">
+<span class="font-display-lg-mobile text-display-lg-mobile text-surface-container-highest font-bold leading-none mb-2 block group-hover:text-tertiary/20 transition-colors mt-8 md:mt-0">2022</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Global Expansion</h4>
+<p class="text-on-surface-variant font-body-md text-sm">Opening of strategic offices in key financial hubs across three continents.</p>
+</div>
+</div>
+<!-- Milestone 3 -->
+<div class="shrink-0 w-72 md:w-80 snap-start relative group">
+<div class="hidden md:block absolute top-[50%] left-0 w-full h-px bg-tertiary origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 z-0"></div>
+<div class="hidden md:block absolute top-[50%] left-6 w-3 h-3 rounded-full bg-surface border-2 border-tertiary -translate-y-1/2 z-10 group-hover:bg-tertiary transition-colors"></div>
+<div class="md:pb-16 md:pt-0 pt-8 pb-0 flex flex-col md:justify-end h-full">
+<span class="font-display-lg-mobile text-display-lg-mobile text-surface-container-highest font-bold leading-none mb-2 block group-hover:text-tertiary/20 transition-colors">2024</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Network Integration</h4>
+<p class="text-on-surface-variant font-body-md text-sm">Launch of the proprietary Executive Partners network, connecting global leaders.</p>
+</div>
+</div>
+<!-- Milestone 4 -->
+<div class="shrink-0 w-72 md:w-80 snap-start relative group">
+<div class="hidden md:block absolute top-[50%] left-6 w-3 h-3 rounded-full bg-surface border-2 border-tertiary -translate-y-1/2 z-10 group-hover:bg-tertiary transition-colors"></div>
+<div class="md:pt-16 md:pb-0 flex flex-col justify-start h-full">
+<span class="font-display-lg-mobile text-display-lg-mobile text-surface-container-highest font-bold leading-none mb-2 block group-hover:text-tertiary/20 transition-colors mt-8 md:mt-0">2026</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2 text-tertiary">Building The Future</h4>
+<p class="text-on-surface-variant font-body-md text-sm">Pioneering next-generation advisory models blending AI insights with human expertise.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-32 bg-primary-container text-center px-margin-mobile md:px-margin-desktop relative overflow-hidden">
+<div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 50% 50%, #4F8F78 0%, transparent 60%);"></div>
+<div class="relative z-10 max-w-2xl mx-auto">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-8">
+                    Build The Future With Us.
+                </h2>
+<a class="inline-flex items-center justify-center bg-tertiary text-on-tertiary font-label-caps text-label-caps px-8 py-4 rounded hover:bg-tertiary-fixed transition-colors shadow-[0_0_20px_rgba(201,169,110,0.2)] hover:shadow-[0_0_30px_rgba(201,169,110,0.4)]" href="#">
+                    Connect With Brillaris Global
+                </a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full pt-20 pb-10 border-t border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="md:col-span-1 mb-8 md:mb-0">
+<div class="font-headline-md text-headline-md text-tertiary mb-6">Brillaris Global</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+                    Strategic foresight and disciplined execution for the modern global era.
+                </p>
+</div>
+<div class="md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8">
+<div>
+<h4 class="font-label-caps text-label-caps text-on-surface mb-4">Advisory</h4>
+<ul class="space-y-3 font-body-md text-body-md">
+<li><a class="text-on-surface-variant hover:text-tertiary transition-all opacity-80 hover:opacity-100" href="#">Strategy</a></li>
+<li><a class="text-on-surface-variant hover:text-tertiary transition-all opacity-80 hover:opacity-100" href="#">Global Insights</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-surface mb-4">Connect</h4>
+<ul class="space-y-3 font-body-md text-body-md">
+<li><a class="text-on-surface-variant hover:text-tertiary transition-all opacity-80 hover:opacity-100" href="#">Network</a></li>
+<li><a class="text-on-surface-variant hover:text-tertiary transition-all opacity-80 hover:opacity-100" href="#">Executive Partners</a></li>
+</ul>
+</div>
+<div class="col-span-2 md:col-span-1">
+<h4 class="font-label-caps text-label-caps text-on-surface mb-4">Legal</h4>
+<ul class="space-y-3 font-body-md text-body-md">
+<li><a class="text-on-surface-variant hover:text-tertiary transition-all opacity-80 hover:opacity-100" href="#">Institutional Privacy</a></li>
+<li><a class="text-on-surface-variant hover:text-tertiary transition-all opacity-80 hover:opacity-100" href="#">Global Compliance</a></li>
+<li><a class="text-on-surface-variant hover:text-tertiary transition-all opacity-80 hover:opacity-100" href="#">Terms of Engagement</a></li>
+<li><a class="text-on-surface-variant hover:text-tertiary transition-all opacity-80 hover:opacity-100" href="#">Accessibility</a></li>
+<li><a class="text-on-surface-variant hover:text-tertiary transition-all opacity-80 hover:opacity-100" href="#">Investor Relations</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-outline-variant/10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+                © 2024 Brillaris Global Advisory. All rights reserved.
+            </p>
+</div>
+</footer>
+<script>
+        // Simple script to add background to nav on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body></html>

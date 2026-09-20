@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Business Consulting - GLOBAL STRATEGY</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#e4c285",
+                        "outline-variant": "#414847",
+                        "tertiary-container": "#372600",
+                        "on-tertiary": "#412d00",
+                        "secondary-fixed": "#b6ede3",
+                        "on-error-container": "#ffdad6",
+                        "error-container": "#93000a",
+                        "tertiary-fixed": "#ffdea4",
+                        "on-primary": "#133632",
+                        "surface": "#121411",
+                        "on-tertiary-fixed": "#261900",
+                        "on-primary-fixed-variant": "#2b4d48",
+                        "on-error": "#690005",
+                        "on-background": "#e3e3de",
+                        "tertiary-fixed-dim": "#e4c285",
+                        "surface-tint": "#a9cec7",
+                        "surface-container-high": "#292a27",
+                        "on-primary-fixed": "#00201d",
+                        "outline": "#8b9290",
+                        "inverse-on-surface": "#30312e",
+                        "secondary": "#9bd1c7",
+                        "surface-container": "#1f201d",
+                        "on-tertiary-container": "#aa8c54",
+                        "on-tertiary-fixed-variant": "#5a4312",
+                        "primary-fixed-dim": "#a9cec7",
+                        "primary": "#a9cec7",
+                        "on-surface-variant": "#c1c8c6",
+                        "surface-bright": "#383a36",
+                        "inverse-primary": "#436560",
+                        "secondary-container": "#164f48",
+                        "surface-variant": "#343532",
+                        "error": "#ffb4ab",
+                        "inverse-surface": "#e3e3de",
+                        "secondary-fixed-dim": "#9bd1c7",
+                        "surface-container-lowest": "#0d0f0c",
+                        "on-secondary": "#003731",
+                        "background": "#121411",
+                        "on-surface": "#e3e3de",
+                        "on-secondary-fixed": "#00201c",
+                        "on-primary-container": "#749791",
+                        "primary-fixed": "#c5eae3",
+                        "on-secondary-container": "#89bfb6",
+                        "primary-container": "#092e2a",
+                        "on-secondary-fixed-variant": "#164f48",
+                        "surface-container-highest": "#343532",
+                        "surface-dim": "#121411",
+                        "surface-container-low": "#1b1c19"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "unit": "8px",
+                        "container-max": "1280px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-sm": ["Playfair Display"],
+                        "label-caps": ["Inter"],
+                        "display-lg": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #121411; color: #e3e3de; }
+        .glass-overlay { background: rgba(9, 46, 42, 0.7); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        .jade-border { border: 1px solid rgba(79, 143, 120, 0.15); }
+        .hover-jade-glow:hover { box-shadow: 0 0 15px rgba(79, 143, 120, 0.3); border-color: rgba(79, 143, 120, 0.5); }
+        .hover-champagne-glow:hover { box-shadow: 0 0 20px rgba(228, 194, 133, 0.4); }
+        .editorial-input { background-color: #124C45; border: none; border-bottom: 1px solid #e3e3de; }
+        .editorial-input:focus { outline: none; border-bottom-color: #e4c285; box-shadow: none; }
+        
+        .fade-in-up { animation: fadeInUp 0.8s ease-out forwards; opacity: 0; transform: translateY(20px); }
+        @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-body-lg text-body-lg">
+<!-- TopNavBar -->
+<nav class="bg-surface/70 dark:bg-surface/70 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-outline-variant/15 transition-all duration-300">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface tracking-tighter">
+                GLOBAL STRATEGY
+            </div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-8">
+<ul class="flex gap-8 font-label-caps text-label-caps uppercase">
+<li><a class="text-on-surface hover:text-tertiary transition-colors hover:text-tertiary transition-all duration-300 opacity-80 hover:opacity-100 hover:scale-95 transition-transform" href="#">Insights</a></li>
+<li><a class="text-tertiary border-b-2 border-tertiary pb-1 opacity-100 transition-transform" href="#">Solutions</a></li>
+<li><a class="text-on-surface hover:text-tertiary transition-colors hover:text-tertiary transition-all duration-300 opacity-80 hover:opacity-100 hover:scale-95 transition-transform" href="#">Markets</a></li>
+<li><a class="text-on-surface hover:text-tertiary transition-colors hover:text-tertiary transition-all duration-300 opacity-80 hover:opacity-100 hover:scale-95 transition-transform" href="#">Network</a></li>
+<li><a class="text-on-surface hover:text-tertiary transition-colors hover:text-tertiary transition-all duration-300 opacity-80 hover:opacity-100 hover:scale-95 transition-transform" href="#">About</a></li>
+</ul>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-on-surface hover:text-tertiary cursor-pointer" data-icon="search">search</span>
+<button class="bg-tertiary text-on-tertiary font-label-caps text-label-caps px-6 py-3 rounded uppercase hover-champagne-glow transition-all duration-300">
+                        Contact Us
+                    </button>
+</div>
+</div>
+<!-- Mobile Menu Toggle -->
+<div class="md:hidden flex items-center">
+<span class="material-symbols-outlined text-on-surface" data-icon="menu">menu</span>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-end pt-32 pb-24 md:pb-32 px-margin-mobile md:px-margin-desktop">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-surface/40 via-surface/80 to-surface z-10"></div>
+<div class="w-full h-full bg-cover bg-center absolute inset-0 mix-blend-overlay opacity-60" data-alt="A cinematic, ultra-high definition shot of a sophisticated executive boardroom high above a modern metropolis at twilight. Global data projections reflect off large glass windows. The atmosphere is powerful, strategic, and bathed in deep obsidian greens and warm Champagne gold city lights, reflecting an Executive Editorial aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDkhAQlrboBOgZxac6P4bXGZySiGqVuhl0NJE_dP5puLReVTmSZV3J7y0Dgyir87DZF5a0g2EbBN7hm8O2Ww9kUJfW_s7okOaBC_tiOxZcvQlC6gUIYhqOhxNMnbWBNqiBDBN-pXIzjyhFNW3JmKbXF2If53461fDtBhNFLW4m1xcdv6bBhK_PRJoLO-FWsO5kVMYZ2Caslw-DGafHncSg3cq6VdbQUrDHI0bc3hmLVEUX1X7_r4W3f')"></div>
+</div>
+<div class="relative z-20 max-w-container-max mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8 lg:col-span-9 flex flex-col gap-6 fade-in-up">
+<div class="font-label-caps text-label-caps text-tertiary uppercase tracking-widest flex items-center gap-4">
+<span class="w-8 h-px bg-tertiary"></span> SERVICES / 01
+                    </div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface">Business Consulting</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mt-4 md:mt-8">
+                        Transform complex business challenges into clear, actionable growth strategies. We provide global insights for localized impact, engineered for institutional stability and market dominance.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 mt-8">
+<button class="bg-tertiary text-on-tertiary font-label-caps text-label-caps px-8 py-4 uppercase tracking-widest hover-champagne-glow transition-all duration-300">
+                            Consult an Expert
+                        </button>
+<button class="bg-transparent border border-secondary text-on-surface font-label-caps text-label-caps px-8 py-4 uppercase tracking-widest hover:bg-secondary/10 transition-all duration-300">
+                            Download Overview
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Overview Section -->
+<section class="py-24 md:py-32 px-margin-mobile md:px-margin-desktop bg-surface-container">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 flex flex-col gap-8 fade-in-up">
+<h2 class="font-headline-md text-headline-md text-on-surface">Turning Complexity Into Direction.</h2>
+<div class="w-12 h-px bg-tertiary"></div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Our approach bridges the gap between visionary thinking and operational reality. We partner with executive teams to dissect market volatility, architect resilient operating models, and execute strategic shifts that define industry leadership.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        By combining deep sector expertise with proprietary analytics frameworks, we ensure that every strategic initiative is grounded in empirical data and aligned with long-term enterprise value creation.
+                    </p>
+</div>
+<div class="md:col-span-6 md:col-start-7 mt-12 md:mt-0 fade-in-up delay-100">
+<div class="relative w-full aspect-[4/3] jade-border overflow-hidden rounded-sm group">
+<div class="absolute inset-0 bg-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A meticulously composed, high-end editorial photograph of a diverse group of elite executives engaging in a focused strategy session around a sleek, dark wood table. Architectural rigging and soft, directional light emphasize depth and focus. Deep teal tones contrast with warm champagne highlights. Modern minimalist environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2qyee1OczH70QWTZVsuwopTBDcESeSjEvYJHUVtRhYqR23UbgG6LA6OFc2MQ6AeWONa-1quvR5a5J-avqzQk-aulviQdhZdZ-HKfF1lbtH4M-JpFy3dJkAqSbUsUrP21TH46z3ayWXxfjwRIm_SydAsAg0U_G150my3VF0Fdg6CzW0rM0MIbrcli0VbcsOsCtNcHRuzh5E_x0Lnx-2TAF757TbZyOyBxLMPMM-3FGfKgwMn0wMmAT"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Capabilities Section -->
+<section class="py-24 md:py-32 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 fade-in-up">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">Core Capabilities</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">Precision-engineered solutions for the modern global enterprise.</p>
+</div>
+<div class="hidden md:flex gap-4">
+<button class="w-12 h-12 rounded-full border border-outline flex items-center justify-center text-on-surface hover:border-tertiary hover:text-tertiary transition-colors"><span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span></button>
+<button class="w-12 h-12 rounded-full border border-outline flex items-center justify-center text-on-surface hover:border-tertiary hover:text-tertiary transition-colors"><span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span></button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="bg-primary-container p-8 jade-border hover-jade-glow transition-all duration-300 group cursor-pointer fade-in-up">
+<div class="w-12 h-12 rounded bg-surface/50 flex items-center justify-center mb-12 group-hover:bg-tertiary/10 transition-colors">
+<span class="material-symbols-outlined text-tertiary" data-icon="strategy">strategy</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Business Strategy</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">Architecting sustainable competitive advantages in volatile global markets through rigorous analysis and bold repositioning.</p>
+<div class="mt-8 flex items-center text-tertiary font-label-caps text-label-caps uppercase opacity-0 group-hover:opacity-100 transform translate-x-[-10px] group-hover:translate-x-0 transition-all duration-300">
+                            Explore <span class="material-symbols-outlined ml-2 text-[16px]" data-icon="arrow_right_alt">arrow_right_alt</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-primary-container p-8 jade-border hover-jade-glow transition-all duration-300 group cursor-pointer fade-in-up delay-100">
+<div class="w-12 h-12 rounded bg-surface/50 flex items-center justify-center mb-12 group-hover:bg-tertiary/10 transition-colors">
+<span class="material-symbols-outlined text-tertiary" data-icon="public">public</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Market Expansion</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">Navigating complex regulatory environments and cultural nuances to successfully enter and scale in new international territories.</p>
+<div class="mt-8 flex items-center text-tertiary font-label-caps text-label-caps uppercase opacity-0 group-hover:opacity-100 transform translate-x-[-10px] group-hover:translate-x-0 transition-all duration-300">
+                            Explore <span class="material-symbols-outlined ml-2 text-[16px]" data-icon="arrow_right_alt">arrow_right_alt</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-primary-container p-8 jade-border hover-jade-glow transition-all duration-300 group cursor-pointer fade-in-up delay-200">
+<div class="w-12 h-12 rounded bg-surface/50 flex items-center justify-center mb-12 group-hover:bg-tertiary/10 transition-colors">
+<span class="material-symbols-outlined text-tertiary" data-icon="memory">memory</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Digital Transformation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">Integrating cutting-edge technologies with legacy systems to create agile, data-driven operational ecosystems.</p>
+<div class="mt-8 flex items-center text-tertiary font-label-caps text-label-caps uppercase opacity-0 group-hover:opacity-100 transform translate-x-[-10px] group-hover:translate-x-0 transition-all duration-300">
+                            Explore <span class="material-symbols-outlined ml-2 text-[16px]" data-icon="arrow_right_alt">arrow_right_alt</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-primary-container p-8 jade-border hover-jade-glow transition-all duration-300 group cursor-pointer fade-in-up">
+<div class="w-12 h-12 rounded bg-surface/50 flex items-center justify-center mb-12 group-hover:bg-tertiary/10 transition-colors">
+<span class="material-symbols-outlined text-tertiary" data-icon="settings_suggest">settings_suggest</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Operational Excellence</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">Streamlining complex global supply chains and internal processes to maximize efficiency and reduce institutional drag.</p>
+<div class="mt-8 flex items-center text-tertiary font-label-caps text-label-caps uppercase opacity-0 group-hover:opacity-100 transform translate-x-[-10px] group-hover:translate-x-0 transition-all duration-300">
+                            Explore <span class="material-symbols-outlined ml-2 text-[16px]" data-icon="arrow_right_alt">arrow_right_alt</span>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-primary-container p-8 jade-border hover-jade-glow transition-all duration-300 group cursor-pointer fade-in-up delay-100">
+<div class="w-12 h-12 rounded bg-surface/50 flex items-center justify-center mb-12 group-hover:bg-tertiary/10 transition-colors">
+<span class="material-symbols-outlined text-tertiary" data-icon="trending_up">trending_up</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Growth Strategy</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">Identifying and capturing new revenue streams through innovative product development, M&amp;A strategy, and market positioning.</p>
+<div class="mt-8 flex items-center text-tertiary font-label-caps text-label-caps uppercase opacity-0 group-hover:opacity-100 transform translate-x-[-10px] group-hover:translate-x-0 transition-all duration-300">
+                            Explore <span class="material-symbols-outlined ml-2 text-[16px]" data-icon="arrow_right_alt">arrow_right_alt</span>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="bg-primary-container p-8 jade-border hover-jade-glow transition-all duration-300 group cursor-pointer fade-in-up delay-200">
+<div class="w-12 h-12 rounded bg-surface/50 flex items-center justify-center mb-12 group-hover:bg-tertiary/10 transition-colors">
+<span class="material-symbols-outlined text-tertiary" data-icon="groups">groups</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Organizational Transformation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">Redesigning corporate structures and culture to foster agility, leadership alignment, and resilient global teams.</p>
+<div class="mt-8 flex items-center text-tertiary font-label-caps text-label-caps uppercase opacity-0 group-hover:opacity-100 transform translate-x-[-10px] group-hover:translate-x-0 transition-all duration-300">
+                            Explore <span class="material-symbols-outlined ml-2 text-[16px]" data-icon="arrow_right_alt">arrow_right_alt</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-margin-mobile md:px-margin-desktop bg-primary-container border-y border-secondary/10 relative overflow-hidden">
+<!-- Subtle background pattern -->
+<div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(#4F8F78 1px, transparent 1px); background-size: 24px 24px;"></div>
+<div class="max-w-4xl mx-auto text-center relative z-10 fade-in-up">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-8">Let's Discuss Your Challenge.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl mx-auto">
+                    Partner with our executive strategy team to define your next era of growth and market leadership.
+                </p>
+<button class="bg-tertiary text-on-tertiary font-label-caps text-label-caps px-10 py-5 uppercase tracking-widest hover-champagne-glow transition-all duration-300 shadow-lg">
+                    Start A Conversation
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest w-full border-t border-outline-variant/10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-20 max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-2 mb-8 md:mb-0">
+<div class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6">
+                    GLOBAL STRATEGY
+                </div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mb-8">
+                    Architecting institutional resilience and global market dominance for the world's most ambitious enterprises.
+                </p>
+<div class="font-body-md text-body-md text-on-surface-variant">
+                    © 2024 Global Strategy Group. All rights reserved.
+                </div>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps text-on-surface mb-6 uppercase tracking-widest">Connect</h4>
+<ul class="space-y-4 font-body-md text-body-md">
+<li><a class="text-on-surface-variant hover:text-on-surface hover:text-tertiary underline-offset-4 hover:underline transition-all duration-200" href="#">Global Offices</a></li>
+<li><a class="text-on-surface-variant hover:text-on-surface hover:text-tertiary underline-offset-4 hover:underline transition-all duration-200" href="#">Careers</a></li>
+<li><a class="text-on-surface-variant hover:text-on-surface hover:text-tertiary underline-offset-4 hover:underline transition-all duration-200" href="#">Media Relations</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps text-on-surface mb-6 uppercase tracking-widest">Legal</h4>
+<ul class="space-y-4 font-body-md text-body-md">
+<li><a class="text-on-surface-variant hover:text-on-surface hover:text-tertiary underline-offset-4 hover:underline transition-all duration-200" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-on-surface hover:text-tertiary underline-offset-4 hover:underline transition-all duration-200" href="#">Terms of Service</a></li>
+<li><a class="text-on-surface-variant hover:text-on-surface hover:text-tertiary underline-offset-4 hover:underline transition-all duration-200" href="#">Compliance</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>

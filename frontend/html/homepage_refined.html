@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Brillaris Global | Building Businesses. Creating Global Impact.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary": "#C9A96E",
+                      "tertiary-fixed": "#DBC191",
+                      "surface": "#121411",
+                      "on-surface": "#e3e3de",
+                      "on-surface-variant": "#c1c8c6",
+                      "surface-container-lowest": "#0d0f0c",
+                      "background": "#121411",
+                      "on-tertiary": "#412d00",
+                      "outline": "#8b9290",
+                      "outline-variant": "#414847",
+                      "obsidian-green": "#092E2A",
+                      "ivory": "#F8F7F2"
+              },
+              "fontFamily": {
+                      "headline-sm": [
+                              "Playfair Display"
+                      ],
+                      "label-caps": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "display-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ]
+              },
+              "spacing": {
+                      "container-max": "1280px",
+                      "margin-desktop": "64px",
+                      "margin-mobile": "20px",
+                      "gutter": "24px"
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-glow-hover:hover {
+            text-shadow: 0 0 10px rgba(201, 169, 110, 0.5);
+        }
+        .btn-glow-hover:hover {
+            box-shadow: 0 0 15px rgba(201, 169, 110, 0.4);
+        }
+        .nav-scrolled {
+            background-color: #F8F7F2 !important;
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .nav-scrolled a, .nav-scrolled button {
+            color: #092E2A !important;
+        }
+        .nav-scrolled .bg-tertiary {
+            background-color: #092E2A !important;
+            color: #F8F7F2 !important;
+        }
+        .pulse-dot {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(201, 169, 110, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(201, 169, 110, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(201, 169, 110, 0); }
+        }
+        .glass-card {
+            background: rgba(18, 76, 69, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(79, 143, 120, 0.15);
+        }
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-tertiary selection:text-on-tertiary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent border-b border-white/10 text-tertiary font-label-caps text-label-caps" id="mainNav">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-4">
+<img alt="Brillaris Global Logo" class="h-10 w-auto" src="D:\JOB\Brillaris\Brillaris_Webpage\project\frontend\image\logo.png"/>
+<span class="font-display-lg text-display-lg-mobile md:text-display-lg text-white tracking-tighter hidden lg:block text-[24px]">BRILLARIS GLOBAL</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-white hover:text-tertiary transition-colors transition-all duration-300" href="D:\JOB\Brillaris\Brillaris_Webpage\project\frontend\html\homepage_refined.html">Home</a>
+<a class="text-white hover:text-tertiary transition-colors transition-all duration-300" href="file:///D:/JOB/Brillaris/Brillaris_Webpage/project/frontend/html/brillaris_global_about_page.html">About</a>
+<a class="text-white hover:text-tertiary transition-colors transition-all duration-300" href="file:///D:/JOB/Brillaris/Brillaris_Webpage/project/frontend/html/brillaris_global_services_page_refined.html">Services</a>
+<a class="text-white hover:text-tertiary transition-colors transition-all duration-300" href="file:///D:/JOB/Brillaris/Brillaris_Webpage/project/frontend/html/brillaris_global_careers_landing_page_refined_v2.html">Careers</a>
+<a class="text-white hover:text-tertiary transition-colors transition-all duration-300" href="file:///D:/JOB/Brillaris/Brillaris_Webpage/project/frontend/html/brillaris_global_contact_page.html">Contact</a>
+</div>
+<div class="flex items-center gap-6">
+<button aria-label="Search" class="hidden md:block text-white hover:text-tertiary transition-colors">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</button>
+<button class="hidden md:block text-white hover:text-tertiary transition-colors">Login</button>
+<a class="bg-tertiary text-on-tertiary px-6 py-2.5 rounded hover:bg-tertiary-fixed transition-colors btn-glow-hover flex items-center gap-2 Active: opacity-80 scale-95 transition-transform" href="#">
+                    Partner With Us
+                </a>
+<button aria-label="Menu" class="md:hidden text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Cinematic office showing global business professionals" class="w-full h-full object-cover opacity-60" src="D:\JOB\Brillaris\Brillaris_Webpage\project\frontend\image\cinematic_high_profile_corporate_hero_image_for_an_international_business.png"/>
+<div class="absolute inset-0 bg-gradient-to-t from-obsidian-green via-obsidian-green/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center mt-16">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-6 max-w-4xl mx-auto leading-tight drop-shadow-lg">
+                Building Businesses.<br/>
+<span class="text-tertiary">Creating Global Impact.</span>
+</h1>
+<p class="font-body-lg text-[18px] text-gray-200 max-w-2xl mx-auto mb-10 drop-shadow">
+                Connecting vision, people and opportunity through innovative solutions, strategic partnerships and future-ready services.
+            </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="w-full sm:w-auto bg-tertiary text-on-tertiary px-8 py-4 rounded font-label-caps text-label-caps hover:bg-tertiary-fixed transition-colors btn-glow-hover flex items-center justify-center gap-2" href="#services">
+                    Explore Our Services
+                    <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<a class="w-full sm:w-auto border border-white px-8 py-4 rounded font-label-caps text-label-caps text-white hover:border-tertiary hover:text-tertiary transition-colors flex items-center justify-center" href="#partner">
+                    Partner With Us
+                </a>
+</div>
+</div>
+</header>
+<!-- Trust Metrics -->
+<section class="py-16 bg-obsidian-green border-y border-white/10 relative z-20">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+<div class="flex flex-col items-center">
+<div class="font-display-lg text-[40px] md:text-[64px] text-tertiary flex items-center gap-1 mb-2">
+<span class="counter" data-target="15">0</span><span class="text-[40px]">+</span>
+</div>
+<span class="font-label-caps text-[12px] text-gray-300 uppercase tracking-widest">Markets</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="font-display-lg text-[40px] md:text-[64px] text-tertiary flex items-center gap-1 mb-2">
+<span class="counter" data-target="50">0</span><span class="text-[40px]">+</span>
+</div>
+<span class="font-label-caps text-[12px] text-gray-300 uppercase tracking-widest">Strategic Partners</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="font-display-lg text-[40px] md:text-[64px] text-tertiary flex items-center gap-1 mb-2">
+<span class="counter" data-target="10">0</span><span class="text-[40px]">K+</span>
+</div>
+<span class="font-label-caps text-[12px] text-gray-300 uppercase tracking-widest">People Connected</span>
+</div>
+<div class="flex flex-col items-center relative">
+<div class="font-display-lg text-[40px] md:text-[64px] text-tertiary flex items-center gap-1 mb-2">
+<span class="counter" data-target="98">0</span><span class="text-[40px]">%</span>
+</div>
+<span class="font-label-caps text-[12px] text-gray-300 uppercase tracking-widest">Client Satisfaction</span>
+<div class="absolute top-2 right-4 w-2 h-2 rounded-full bg-tertiary pulse-dot"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Client Logos -->
+<section class="py-16 bg-ivory text-obsidian-green">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<h3 class="font-label-caps text-[14px] uppercase tracking-widest mb-10 text-obsidian-green/70">Trusted By Businesses &amp; Partners</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 items-center opacity-60">
+<!-- Placeholders for monochrome logos -->
+<div class="h-12 bg-gray-300 rounded"></div>
+<div class="h-12 bg-gray-300 rounded"></div>
+<div class="h-12 bg-gray-300 rounded"></div>
+<div class="h-12 bg-gray-300 rounded"></div>
+<div class="h-12 bg-gray-300 rounded"></div>
+<div class="h-12 bg-gray-300 rounded"></div>
+<div class="h-12 bg-gray-300 rounded"></div>
+<div class="h-12 bg-gray-300 rounded"></div>
+</div>
+</div>
+</section>
+<!-- Vision & Mission -->
+<section class="py-24 bg-ivory text-obsidian-green relative overflow-hidden">
+<!-- Abstract Network Graphic Overlay (simplified placeholder) -->
+<div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(#092E2A 1px, transparent 1px); background-size: 40px 40px;"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="grid md:grid-cols-2 gap-16">
+<div>
+<h2 class="font-display-lg text-[40px] mb-6 text-tertiary">Our Vision</h2>
+<p class="font-body-lg text-[18px] leading-relaxed text-obsidian-green/80">
+                        To architect the future of global enterprise, creating a seamlessly connected business ecosystem where innovation thrives without borders, and opportunity is accessible to forward-thinking organizations worldwide.
+                    </p>
+</div>
+<div>
+<h2 class="font-display-lg text-[40px] mb-6 text-tertiary">Our Mission</h2>
+<p class="font-body-lg text-[18px] leading-relaxed text-obsidian-green/80">
+                        We empower businesses to scale sustainably through strategic insights, operational excellence, and an unparalleled network of global partners, delivering measurable impact and long-term value.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services -->
+<section class="py-24 bg-white text-obsidian-green" id="services">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-display-lg text-[40px] md:text-[48px] mb-4">Solutions Designed For What's Next</h2>
+<p class="font-body-lg text-obsidian-green/70 max-w-2xl mx-auto">Comprehensive strategies and execution for modern global enterprises.</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Service Card 1 -->
+<div class="service-card bg-ivory p-8 rounded-lg border border-gray-100">
+<span class="material-symbols-outlined text-[32px] text-tertiary mb-6 block">public</span>
+<h3 class="font-headline-md text-[24px] mb-4">Global Expansion Strategy</h3>
+<p class="text-obsidian-green/70">Navigate new markets with confidence through data-driven entry strategies and local market intelligence.</p>
+</div>
+<!-- Service Card 2 -->
+<div class="service-card bg-ivory p-8 rounded-lg border border-gray-100">
+<span class="material-symbols-outlined text-[32px] text-tertiary mb-6 block">trending_up</span>
+<h3 class="font-headline-md text-[24px] mb-4">Corporate Restructuring</h3>
+<p class="text-obsidian-green/70">Optimize organizational frameworks for agility, scale, and enhanced operational efficiency.</p>
+</div>
+<!-- Service Card 3 -->
+<div class="service-card bg-ivory p-8 rounded-lg border border-gray-100">
+<span class="material-symbols-outlined text-[32px] text-tertiary mb-6 block">handshake</span>
+<h3 class="font-headline-md text-[24px] mb-4">M&amp;A Advisory</h3>
+<p class="text-obsidian-green/70">Strategic guidance through complex mergers, acquisitions, and strategic partnerships.</p>
+</div>
+<!-- Service Card 4 -->
+<div class="service-card bg-ivory p-8 rounded-lg border border-gray-100">
+<span class="material-symbols-outlined text-[32px] text-tertiary mb-6 block">memory</span>
+<h3 class="font-headline-md text-[24px] mb-4">Digital Transformation</h3>
+<p class="text-obsidian-green/70">Modernize legacy systems and integrate cutting-edge technologies to future-proof your business.</p>
+</div>
+<!-- Service Card 5 -->
+<div class="service-card bg-ivory p-8 rounded-lg border border-gray-100">
+<span class="material-symbols-outlined text-[32px] text-tertiary mb-6 block">account_balance</span>
+<h3 class="font-headline-md text-[24px] mb-4">Financial Engineering</h3>
+<p class="text-obsidian-green/70">Sophisticated capital structuring and financial strategies to support aggressive growth objectives.</p>
+</div>
+<!-- Service Card 6 -->
+<div class="service-card bg-ivory p-8 rounded-lg border border-gray-100">
+<span class="material-symbols-outlined text-[32px] text-tertiary mb-6 block">group</span>
+<h3 class="font-headline-md text-[24px] mb-4">Human Capital Management</h3>
+<p class="text-obsidian-green/70">Develop resilient leadership pipelines and build high-performance global teams.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Global Presence -->
+<section class="py-24 bg-obsidian-green relative overflow-hidden">
+<div class="absolute inset-0">
+<img alt="Global Map" class="w-full h-full object-cover opacity-30 mix-blend-screen" src="D:\JOB\Brillaris\Brillaris_Webpage\project\frontend\image\sophisticated_world_map_visualization_with_glowing_connection_points_and.png"/>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10 text-center">
+<h2 class="font-display-lg text-[40px] md:text-[48px] text-white mb-6">Our Global Presence</h2>
+<p class="font-body-lg text-gray-300 max-w-2xl mx-auto mb-12">Operating across key financial hubs and emerging markets, connecting opportunities worldwide.</p>
+<div class="inline-flex items-center gap-2 text-tertiary font-label-caps tracking-widest text-[14px]">
+<span class="w-2 h-2 rounded-full bg-tertiary pulse-dot block"></span>
+            Live Network Status
+        </div>
+</div>
+</section>
+<!-- Why Brillaris Global -->
+<section class="py-24 bg-ivory text-obsidian-green">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-display-lg text-[40px] md:text-[48px] mb-4">Why Brillaris Global</h2>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-8">
+<div class="text-center">
+<div class="w-16 h-16 mx-auto bg-obsidian-green/5 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[28px] text-tertiary">language</span>
+</div>
+<h3 class="font-headline-md text-[20px] mb-3">Global Perspective</h3>
+<p class="text-obsidian-green/70 text-[15px]">Deep understanding of nuanced international markets and cross-border dynamics.</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 mx-auto bg-obsidian-green/5 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[28px] text-tertiary">insights</span>
+</div>
+<h3 class="font-headline-md text-[20px] mb-3">Strategic Thinking</h3>
+<p class="text-obsidian-green/70 text-[15px]">Forward-looking approaches that anticipate market shifts and capitalize on emerging trends.</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 mx-auto bg-obsidian-green/5 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[28px] text-tertiary">lightbulb</span>
+</div>
+<h3 class="font-headline-md text-[20px] mb-3">Innovation</h3>
+<p class="text-obsidian-green/70 text-[15px]">Integrating advanced methodologies and technologies into traditional business models.</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 mx-auto bg-obsidian-green/5 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[28px] text-tertiary">verified_user</span>
+</div>
+<h3 class="font-headline-md text-[20px] mb-3">Trust</h3>
+<p class="text-obsidian-green/70 text-[15px]">Built on unwavering integrity, transparency, and a commitment to our clients' success.</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 mx-auto bg-obsidian-green/5 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[28px] text-tertiary">diversity_3</span>
+</div>
+<h3 class="font-headline-md text-[20px] mb-3">People First</h3>
+<p class="text-obsidian-green/70 text-[15px]">Fostering collaborative partnerships and investing in world-class talent.</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 mx-auto bg-obsidian-green/5 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[28px] text-tertiary">flag</span>
+</div>
+<h3 class="font-headline-md text-[20px] mb-3">Impact</h3>
+<p class="text-obsidian-green/70 text-[15px]">Dedicated to delivering measurable, sustainable results that drive enterprise value.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Insights -->
+<section class="py-24 bg-white text-obsidian-green">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex justify-between items-end mb-12">
+<h2 class="font-display-lg text-[40px]">Latest Insights</h2>
+<a class="text-tertiary font-label-caps flex items-center gap-1 hover:text-obsidian-green transition-colors" href="#">View All <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Insight 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/3] bg-gray-200 mb-6 overflow-hidden rounded">
+<div class="w-full h-full bg-obsidian-green/10 transition-transform duration-500 group-hover:scale-105"></div>
+</div>
+<span class="text-tertiary font-label-caps text-[12px] uppercase tracking-widest mb-3 block">Business Insights</span>
+<h3 class="font-headline-md text-[22px] mb-3 group-hover:text-tertiary transition-colors">Navigating Geopolitical Shifts in Global Supply Chains</h3>
+<p class="text-obsidian-green/70 text-sm">Strategies for building resilient operational frameworks in uncertain times.</p>
+</div>
+<!-- Insight 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/3] bg-gray-200 mb-6 overflow-hidden rounded">
+<div class="w-full h-full bg-obsidian-green/10 transition-transform duration-500 group-hover:scale-105"></div>
+</div>
+<span class="text-tertiary font-label-caps text-[12px] uppercase tracking-widest mb-3 block">Industry Trends</span>
+<h3 class="font-headline-md text-[22px] mb-3 group-hover:text-tertiary transition-colors">The Future of AI Integration in Enterprise Finance</h3>
+<p class="text-obsidian-green/70 text-sm">How machine learning is reshaping risk assessment and capital allocation.</p>
+</div>
+<!-- Insight 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/3] bg-gray-200 mb-6 overflow-hidden rounded">
+<div class="w-full h-full bg-obsidian-green/10 transition-transform duration-500 group-hover:scale-105"></div>
+</div>
+<span class="text-tertiary font-label-caps text-[12px] uppercase tracking-widest mb-3 block">Leadership Perspectives</span>
+<h3 class="font-headline-md text-[22px] mb-3 group-hover:text-tertiary transition-colors">Cultivating Agile Leadership Teams</h3>
+<p class="text-obsidian-green/70 text-sm">Preparing executive boards to manage rapid technological change.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Careers CTA -->
+<section class="py-20 bg-ivory text-center border-t border-gray-200">
+<div class="max-w-3xl mx-auto px-margin-mobile">
+<h2 class="font-display-lg text-[32px] md:text-[40px] text-obsidian-green mb-6">Your Next Opportunity Could Start Here.</h2>
+<p class="text-obsidian-green/70 mb-8">Join a global team of visionaries and strategists shaping the future of business.</p>
+<a class="inline-flex items-center gap-2 bg-obsidian-green text-white px-8 py-4 rounded font-label-caps hover:bg-tertiary hover:text-on-tertiary transition-colors" href="#">
+            Explore Careers
+        </a>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24 bg-obsidian-green text-center">
+<div class="max-w-3xl mx-auto px-margin-mobile">
+<h2 class="font-display-lg text-[40px] md:text-[56px] text-white mb-10">Let's Build What's Next.</h2>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="w-full sm:w-auto bg-tertiary text-on-tertiary px-8 py-4 rounded font-label-caps text-label-caps hover:bg-white hover:text-obsidian-green transition-colors flex items-center justify-center gap-2" href="#">
+                Talk To Us
+            </a>
+<a class="w-full sm:w-auto border border-white/30 px-8 py-4 rounded font-label-caps text-label-caps text-white hover:border-white transition-colors flex items-center justify-center" href="#services">
+                Explore Services
+            </a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-obsidian-green w-full border-t border-white/10 text-white font-body-md text-body-md">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-20 max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1 mb-8 md:mb-0">
+<img alt="Brillaris Global Logo" class="h-12 w-auto mb-6" src="https://lh3.googleusercontent.com/aida/AP1WRLs9lf6B9j5XcF5Ran9DeZdiAMO4I5RmzvhAn7caNdbR6LkWXGobevHRpfibwbU5efv900pCQJNCYhEPq6q2qt07BPfsMaNlcDcjbJT8JkYPuxOR8KKYFN72vCFtplpcusR_9hPvSChSWTsNZcmgLaij8dvG528iAw-ZI81GVE6RkELLuqCXxUi1rd4l0qO3lJHPzb6C67BqrhR5YV8xCdrUV-ZjIFLIQQkMdLM_2L5SQlbF7bgyS76usg"/>
+<p class="text-gray-400 text-sm mt-4">© 2024 Brillaris Global. All rights reserved.</p>
+</div>
+<div class="col-span-1 flex flex-col gap-4">
+<h4 class="font-label-caps text-tertiary mb-2">Company</h4>
+<a class="text-gray-300 hover:text-tertiary transition-colors" href="file:///D:/JOB/Brillaris/Brillaris_Webpage/project/frontend/html/brillaris_global_about_page.html">About Us</a>
+<a class="text-gray-300 hover:text-tertiary transition-colors" href="#">Leadership</a>
+<a class="text-gray-300 hover:text-tertiary transition-colors" href="file:///D:/JOB/Brillaris/Brillaris_Webpage/project/frontend/html/brillaris_global_careers_landing_page_refined_v2.html">Careers</a>
+<a class="text-gray-300 hover:text-tertiary transition-colors" href="file:///D:/JOB/Brillaris/Brillaris_Webpage/project/frontend/html/brillaris_global_contact_page.html">Contact</a>
+</div>
+<div class="col-span-1 flex flex-col gap-4">
+<h4 class="font-label-caps text-tertiary mb-2">Expertise</h4>
+<a class="text-gray-300 hover:text-tertiary transition-colors" href="file:///D:/JOB/Brillaris/Brillaris_Webpage/project/frontend/html/brillaris_global_services_page_refined.html">Solutions</a>
+<a class="text-gray-300 hover:text-tertiary transition-colors" href="#">Insights</a>
+<a class="text-gray-300 hover:text-tertiary transition-colors" href="#">Markets</a>
+<a class="text-gray-300 hover:text-tertiary transition-colors" href="#">Global Network</a>
+</div>
+<div class="col-span-1 flex flex-col gap-4">
+<h4 class="font-label-caps text-tertiary mb-2">Legal</h4>
+<a class="text-gray-300 hover:text-tertiary transition-colors" href="#">Privacy Policy</a>
+<a class="text-gray-300 hover:text-tertiary transition-colors" href="#">Terms of Service</a>
+<a class="text-gray-300 hover:text-tertiary transition-colors" href="#">Compliance</a>
+</div>
+</div>
+</footer>
+<script>
+        // Navbar Scroll Effect
+        const nav = document.getElementById('mainNav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('nav-scrolled');
+            } else {
+                nav.classList.remove('nav-scrolled');
+            }
+        });
+
+        // Counter Animation
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200;
+
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const inc = target / speed;
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + inc);
+                        setTimeout(updateCount, 10);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCount();
+            });
+        };
+
+        // Trigger counters when in view
+        const observerOptions = {
+            threshold: 0.5
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.counter').forEach(c => {
+             observer.observe(c.closest('section'));
+        });
+
+    </script>
+</body></html>

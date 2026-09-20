@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Careers - Brillaris Global</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "surface-container-highest": "#343532",
+                "primary": "#a9cec7",
+                "outline-variant": "#414847",
+                "on-tertiary-fixed-variant": "#5a4312",
+                "on-secondary": "#003731",
+                "on-primary": "#133632",
+                "secondary-container": "#164f48",
+                "tertiary": "#e4c285",
+                "error": "#ffb4ab",
+                "on-error": "#690005",
+                "on-background": "#e3e3de",
+                "on-primary-fixed-variant": "#2b4d48",
+                "on-tertiary-container": "#aa8c54",
+                "surface-container-high": "#292a27",
+                "surface-container": "#1f201d",
+                "on-secondary-fixed": "#00201c",
+                "on-tertiary-fixed": "#261900",
+                "surface-container-lowest": "#0d0f0c",
+                "secondary": "#9bd1c7",
+                "surface-tint": "#a9cec7",
+                "tertiary-fixed-dim": "#e4c285",
+                "on-error-container": "#ffdad6",
+                "surface-bright": "#383a36",
+                "on-tertiary": "#412d00",
+                "primary-fixed": "#c5eae3",
+                "on-primary-container": "#749791",
+                "on-secondary-container": "#89bfb6",
+                "secondary-fixed-dim": "#9bd1c7",
+                "primary-container": "#092e2a",
+                "inverse-primary": "#436560",
+                "inverse-on-surface": "#30312e",
+                "inverse-surface": "#e3e3de",
+                "error-container": "#93000a",
+                "outline": "#8b9290",
+                "surface-variant": "#343532",
+                "on-surface-variant": "#c1c8c6",
+                "on-surface": "#e3e3de",
+                "surface": "#121411",
+                "background": "#121411",
+                "surface-dim": "#121411",
+                "on-secondary-fixed-variant": "#164f48",
+                "primary-fixed-dim": "#a9cec7",
+                "tertiary-container": "#372600",
+                "on-primary-fixed": "#00201d",
+                "secondary-fixed": "#b6ede3",
+                "tertiary-fixed": "#ffdea4",
+                "surface-container-low": "#1b1c19"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+        },
+        "spacing": {
+                "gutter": "24px",
+                "unit": "8px",
+                "container-max": "1280px",
+                "margin-mobile": "20px",
+                "margin-desktop": "64px"
+        },
+        "fontFamily": {
+                "headline-md": [
+                        "Playfair Display"
+                ],
+                "body-md": [
+                        "Inter"
+                ],
+                "display-lg": [
+                        "Playfair Display"
+                ],
+                "label-caps": [
+                        "Inter"
+                ],
+                "display-lg-mobile": [
+                        "Playfair Display"
+                ],
+                "body-lg": [
+                        "Inter"
+                ],
+                "headline-sm": [
+                        "Playfair Display"
+                ]
+        },
+        "fontSize": {
+                "headline-md": [
+                        "32px",
+                        {
+                                "lineHeight": "1.3",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "1.5",
+                                "fontWeight": "400"
+                        }
+                ],
+                "display-lg": [
+                        "64px",
+                        {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "label-caps": [
+                        "12px",
+                        {
+                                "lineHeight": "1.0",
+                                "letterSpacing": "0.1em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "display-lg-mobile": [
+                        "40px",
+                        {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "1.6",
+                                "letterSpacing": "0.01em",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-sm": [
+                        "24px",
+                        {
+                                "lineHeight": "1.4",
+                                "fontWeight": "500"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        .glass-panel {
+            background: rgba(18, 76, 69, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(79, 143, 120, 0.15);
+        }
+        .jade-line {
+            background-color: var(--tw-colors-tertiary, #e4c285);
+        }
+        /* Script to handle nav scroll */
+        .nav-scrolled {
+            background-color: rgba(18, 20, 17, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(139, 146, 144, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-tertiary selection:text-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-gradient-to-b from-background/80 to-transparent transition-all duration-300" id="main-nav">
+<div class="flex justify-between items-center h-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="font-headline-sm text-headline-sm tracking-tighter text-on-surface">
+                Brillaris Global
+            </div>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors duration-300" href="#">Strategy</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors duration-300" href="#">Global Insights</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors duration-300" href="#">Network</a>
+<a class="font-label-caps text-label-caps text-tertiary border-b-2 border-tertiary pb-1" href="#">Careers</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors duration-300" href="#">Archives</a>
+</div>
+<button class="hidden md:block font-label-caps text-label-caps bg-tertiary text-primary-container px-6 py-3 rounded-DEFAULT hover:opacity-90 transition-opacity duration-200">
+                Private Office
+            </button>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<script>
+    window.addEventListener('scroll', () => {
+        const nav = document.getElementById('main-nav');
+        if (window.scrollY > 50) {
+            nav.classList.add('nav-scrolled');
+            nav.classList.remove('bg-gradient-to-b', 'from-background/80', 'to-transparent');
+        } else {
+            nav.classList.remove('nav-scrolled');
+            nav.classList.add('bg-gradient-to-b', 'from-background/80', 'to-transparent');
+        }
+    });
+</script>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-24">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-70" data-alt="A diverse group of executives in a modern, sunlit corporate boardroom reviewing architectural plans. The room features floor-to-ceiling windows with a city view, elegant deep green velvet seating, and minimalist gold accents. The atmosphere is professional, collaborative, and highly aspirational." src="https://lh3.googleusercontent.com/aida/AP1WRLv1jUCB5PEpniKlt2FvYnB_rjYof_2IpN2ZBGEYD4pVV_NZuNCDLqg13WfJdABYFZEsAmChqQ7HHJAgM6OvIo4C1DOZ8eZZ13BTgQP7tQYSEnET_ailfKPgpvo17elJUBTsoV9tsQ-YjwpmWF1h0pbUvru7WqBxl8C9DE5TJl1x07V4V7gq77InjL4nPhVPowvB0qM4KnWsxrJv6m1FjKClhQUFj0ULjC-EvS_PN3zkR87sohpBe8ct3EQ"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="max-w-2xl">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-8">
+                        Build Your Future With Brillaris Global.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-xl">
+                        Bring your ideas, ambition and expertise to a growing global organization.
+                    </p>
+<a class="inline-flex items-center justify-center font-label-caps text-label-caps bg-tertiary text-primary-container px-10 py-4 rounded-DEFAULT hover:shadow-[0_0_20px_rgba(228,194,133,0.4)] transition-all duration-300" href="#positions">
+                        View Open Positions
+                    </a>
+</div>
+</div>
+</section>
+<!-- Why Join Us (Bento Grid) -->
+<section class="py-[140px] md:py-[180px] bg-background px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="mb-20">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-6">Why Join Us</h2>
+<div class="h-px w-24 jade-line"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-10 border border-outline-variant/20 rounded-lg flex flex-col items-start hover:border-tertiary/50 transition-colors duration-500">
+<span class="material-symbols-outlined text-tertiary mb-8 text-3xl" style="font-variation-settings: 'FILL' 0;">work</span>
+<h3 class="font-label-caps text-label-caps text-on-surface mb-4 uppercase tracking-widest">Meaningful Work</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Engage in projects that shape global markets and drive sustainable institutional growth.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-10 border border-outline-variant/20 rounded-lg flex flex-col items-start hover:border-tertiary/50 transition-colors duration-500">
+<span class="material-symbols-outlined text-tertiary mb-8 text-3xl" style="font-variation-settings: 'FILL' 0;">public</span>
+<h3 class="font-label-caps text-label-caps text-on-surface mb-4 uppercase tracking-widest">Global Perspective</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Collaborate with an international network of experts across diverse economic sectors.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-10 border border-outline-variant/20 rounded-lg flex flex-col items-start hover:border-tertiary/50 transition-colors duration-500">
+<span class="material-symbols-outlined text-tertiary mb-8 text-3xl" style="font-variation-settings: 'FILL' 0;">trending_up</span>
+<h3 class="font-label-caps text-label-caps text-on-surface mb-4 uppercase tracking-widest">Career Growth</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Structured advancement pathways designed to cultivate the next generation of executive leadership.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-10 border border-outline-variant/20 rounded-lg flex flex-col items-start hover:border-tertiary/50 transition-colors duration-500">
+<span class="material-symbols-outlined text-tertiary mb-8 text-3xl" style="font-variation-settings: 'FILL' 0;">school</span>
+<h3 class="font-label-caps text-label-caps text-on-surface mb-4 uppercase tracking-widest">Learning</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Continuous professional development through exclusive seminars and mentorship programs.</p>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container-lowest p-10 border border-outline-variant/20 rounded-lg flex flex-col items-start hover:border-tertiary/50 transition-colors duration-500">
+<span class="material-symbols-outlined text-tertiary mb-8 text-3xl" style="font-variation-settings: 'FILL' 0;">diversity_3</span>
+<h3 class="font-label-caps text-label-caps text-on-surface mb-4 uppercase tracking-widest">Collaboration</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">A culture of intellectual rigor and mutual respect where every voice contributes to the strategy.</p>
+</div>
+<!-- Card 6 -->
+<div class="bg-surface-container-lowest p-10 border border-outline-variant/20 rounded-lg flex flex-col items-start hover:border-tertiary/50 transition-colors duration-500">
+<span class="material-symbols-outlined text-tertiary mb-8 text-3xl" style="font-variation-settings: 'FILL' 0;">lightbulb</span>
+<h3 class="font-label-caps text-label-caps text-on-surface mb-4 uppercase tracking-widest">Innovation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Pioneering new methodologies at the intersection of finance, technology, and policy.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Culture Section (Editorial) -->
+<section class="py-[160px] bg-secondary-container text-on-secondary-container border-y border-outline-variant/10 relative overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 md:col-start-1 mb-12 md:mb-0">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-8">
+                            A Culture Built<br/>Around People
+                        </h2>
+<p class="font-body-lg text-body-lg text-on-secondary-container mb-10 opacity-90">
+                            We believe that our greatest asset is our intellectual capital. Brillaris Global fosters an environment where exceptional talent is recognized, nurtured, and empowered to make a decisive impact on the world stage.
+                        </p>
+<a class="inline-flex items-center font-label-caps text-label-caps text-tertiary hover:text-tertiary-fixed transition-colors" href="#">
+                            DISCOVER OUR VALUES <span class="material-symbols-outlined ml-3 text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="md:col-span-6 md:col-start-7 relative">
+<div class="aspect-[4/5] overflow-hidden rounded-lg shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A bright, modern office lounge area with lush indoor plants and floor-to-ceiling windows overlooking a city skyline. A diverse group of professionals are engaged in a relaxed but focused conversation around a large rustic wooden table. The aesthetic is contemporary, bright, and collaborative." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmUEtU5wyD_XhXM33tzrl5RTtgkhcz8mDpoDaqqbXqW_y6eB_7c1ZzU2MvJy-_MsSlHQsLxClzto5dCkOIxoVs8bhimvunU4hjvGfOxOTuzlr9QhK0KYAZQau-JtsuuN1opkHR9mIZFNvs2ksd-nKxHwGX77DA3AzcArn3hN_BR_LEGkuD-oTXnOIbTBsrH24Jb8zeLceoEWRyDG50E6u5OsD55CgCXrL6lluGO-oUPw9LtMff8tkd"/>
+</div>
+<!-- Decorative element -->
+<div class="absolute -bottom-10 -left-10 w-40 h-40 border-2 border-tertiary/20 rounded-full z-[-1]"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Employee Stories -->
+<section class="py-[140px] md:py-[180px] bg-background px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="flex justify-between items-end mb-20">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-6">Our People</h2>
+<div class="h-px w-24 jade-line"></div>
+</div>
+<div class="hidden md:flex gap-6">
+<button class="w-12 h-12 rounded-full border border-outline-variant/40 flex items-center justify-center text-on-surface hover:border-tertiary hover:text-tertiary transition-colors"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="w-12 h-12 rounded-full border border-outline-variant/40 flex items-center justify-center text-on-surface hover:border-tertiary hover:text-tertiary transition-colors"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Story 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden rounded-lg mb-8 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A professional studio portrait of a confident male executive in a dark tailored suit and grey tie, sitting casually on a modern chair against a grey background. Lighting is dramatic and high-end editorial style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiAfJmQvVKrq2UAV-NG-t0oEKm3b2i7yeByIo6-Kqovf69Ncyhyg-C-J72RfJcdhHxdvJz88YfUA0vzR1IQEWQzTHBFB-R-TVoUWjJL_IQxBJ49YgQHuDduqGK5DerbInSr6YDGyhrhHzuGGdGkS8GoOpsvRYNSIebhmsuU0PXA_5m-UCpImq9KWZOLd8iB8el7PzoaKtghygvjRslLhXqnU0qtwvRFmQoISM6mWTi2P14FeQ-avwp"/>
+<div class="absolute inset-0 bg-primary-container/20 group-hover:bg-transparent transition-colors duration-500"></div>
+</div>
+<div class="font-label-caps text-label-caps text-tertiary mb-3 uppercase tracking-widest">Managing Director</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Alexander Vance</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3">
+                        "The level of strategic autonomy granted here is unparalleled. You are trusted to navigate complex international landscapes from day one."
+                    </p>
+<span class="font-label-caps text-label-caps text-on-surface flex items-center group-hover:text-tertiary transition-colors">
+                        Read Story <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</span>
+</div>
+<!-- Story 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden rounded-lg mb-8 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A professional portrait of a young male professional wearing a navy blazer over a dark sweater, standing against a minimalist concrete wall. He is smiling warmly. The lighting is soft and natural." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0tN1aPfKyIKvcdYD8zhbI0FpcFb1dlFfJfpvruU2phUqGMqWiK7q3lACCxvpVqWtFJnrNal08z9sekloLQUsOWTHz3CUyEWvBBB_IMQ8vFr92DgWdcRW_wEIBZhne8M6-RvupgXEdHiGH0NSCa41smE6BbqEEotdV9xhZlI4Xj380GHRlNrfytNnW5SIlQL-5MteDV1mRhP2OcyREVj-engKzp8-5QG8vy525YkqsqtBFeOWzR-_h"/>
+<div class="absolute inset-0 bg-primary-container/20 group-hover:bg-transparent transition-colors duration-500"></div>
+</div>
+<div class="font-label-caps text-label-caps text-tertiary mb-3 uppercase tracking-widest">Senior Analyst</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Marcus Chen</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3">
+                        "The mentorship program doesn't just focus on technical skills; it's about developing the nuanced judgment required for executive leadership."
+                    </p>
+<span class="font-label-caps text-label-caps text-on-surface flex items-center group-hover:text-tertiary transition-colors">
+                        Read Story <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</span>
+</div>
+<!-- Story 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden rounded-lg mb-8 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A professional studio portrait of an elegant female executive in a sharp tailored dark suit, looking confidently at the camera against a deep green backdrop. Lighting highlights her professional demeanor in a high-end editorial style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxc2PFwoF1HUap9FSCi_-k_InIh1AWWYrAUIyGOQG-B-PFAUiFe_ABtcRc6spQwq4mhRgjtUx4bpI5jkFYm1S-Nn0cIJYJ_sRHl2-fdMaeoea-skBPd9b2PUOAVBPxY-lwVpiytPCMRffv9RgxyHEf-t_iNEA_mKyxAEQ8PP_sVPhIahsHxF3A6EPBTPRbtci5LXWKF9s4euGGJJ89z2fJDGLqbFAH8AusL66gPYruHaX9YSjecWm5"/>
+<div class="absolute inset-0 bg-primary-container/20 group-hover:bg-transparent transition-colors duration-500"></div>
+</div>
+<div class="font-label-caps text-label-caps text-tertiary mb-3 uppercase tracking-widest">Head of Global Strategy</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Elena Rostova</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3">
+                        "We don't just follow market trends; our research and advisory teams are instrumental in defining them for our institutional partners."
+                    </p>
+<span class="font-label-caps text-label-caps text-on-surface flex items-center group-hover:text-tertiary transition-colors">
+                        Read Story <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Career Growth Journey (Timeline) -->
+<section class="py-[140px] bg-surface-container-lowest border-y border-outline-variant/10">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-24">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-6">Your Trajectory</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">A structured path designed to elevate your expertise and global influence.</p>
+</div>
+<div class="relative">
+<!-- Connecting Line -->
+<div class="hidden md:block absolute top-10 left-0 w-full h-px jade-line z-0 opacity-50"></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-16 md:gap-gutter relative z-10">
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-full bg-background border border-tertiary flex items-center justify-center mb-8 shadow-[0_0_20px_rgba(228,194,133,0.15)]">
+<span class="material-symbols-outlined text-tertiary text-3xl">login</span>
+</div>
+<h3 class="font-label-caps text-label-caps text-on-surface mb-3 uppercase tracking-widest">Join</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Integrate into our global network and master our core analytical frameworks.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-full bg-background border border-tertiary flex items-center justify-center mb-8 shadow-[0_0_20px_rgba(228,194,133,0.15)]">
+<span class="material-symbols-outlined text-tertiary text-3xl">menu_book</span>
+</div>
+<h3 class="font-label-caps text-label-caps text-on-surface mb-3 uppercase tracking-widest">Learn</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Deepen sector-specific knowledge through active engagement with senior partners.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-full bg-background border border-tertiary flex items-center justify-center mb-8 shadow-[0_0_20px_rgba(228,194,133,0.15)]">
+<span class="material-symbols-outlined text-tertiary text-3xl">trending_up</span>
+</div>
+<h3 class="font-label-caps text-label-caps text-on-surface mb-3 uppercase tracking-widest">Grow</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Assume strategic responsibility for key client portfolios and complex initiatives.</p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-full bg-background border border-tertiary flex items-center justify-center mb-8 shadow-[0_0_20px_rgba(228,194,133,0.15)]">
+<span class="material-symbols-outlined text-tertiary text-3xl">star</span>
+</div>
+<h3 class="font-label-caps text-label-caps text-on-surface mb-3 uppercase tracking-widest">Lead</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Drive organizational vision, mentor emerging talent, and shape global strategy.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Open Positions -->
+<section class="py-[140px] md:py-[180px] bg-background px-margin-mobile md:px-margin-desktop" id="positions">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-6">Current Opportunities</h2>
+<div class="h-px w-24 jade-line"></div>
+</div>
+<div class="flex flex-col sm:flex-row gap-6 w-full md:w-auto">
+<select class="bg-transparent border-b border-on-surface-variant/40 text-on-surface font-body-md focus:border-tertiary focus:ring-0 w-full md:w-56 pb-3 px-0">
+<option class="bg-background text-on-surface">All Locations</option>
+<option class="bg-background text-on-surface">London</option>
+<option class="bg-background text-on-surface">New York</option>
+<option class="bg-background text-on-surface">Singapore</option>
+</select>
+<select class="bg-transparent border-b border-on-surface-variant/40 text-on-surface font-body-md focus:border-tertiary focus:ring-0 w-full md:w-56 pb-3 px-0">
+<option class="bg-background text-on-surface">All Departments</option>
+<option class="bg-background text-on-surface">Strategy</option>
+<option class="bg-background text-on-surface">Research</option>
+<option class="bg-background text-on-surface">Technology</option>
+</select>
+</div>
+</div>
+<div class="space-y-6 mb-16">
+<!-- Job 1 -->
+<a class="block bg-surface-container-lowest border border-outline-variant/20 p-8 rounded-lg hover:border-tertiary hover:bg-surface-container-low transition-all duration-300 group" href="#">
+<div class="flex flex-col md:flex-row justify-between md:items-center gap-6">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3 group-hover:text-tertiary transition-colors">Senior Strategy Consultant</h3>
+<div class="flex gap-6 font-body-md text-body-md text-on-surface-variant">
+<span class="flex items-center"><span class="material-symbols-outlined text-sm mr-2 text-tertiary">location_on</span> London, UK</span>
+<span class="flex items-center"><span class="material-symbols-outlined text-sm mr-2 text-tertiary">domain</span> Corporate Strategy</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-tertiary group-hover:translate-x-2 transition-all text-2xl">arrow_forward</span>
+</div>
+</a>
+<!-- Job 2 -->
+<a class="block bg-surface-container-lowest border border-outline-variant/20 p-8 rounded-lg hover:border-tertiary hover:bg-surface-container-low transition-all duration-300 group" href="#">
+<div class="flex flex-col md:flex-row justify-between md:items-center gap-6">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3 group-hover:text-tertiary transition-colors">Global Market Analyst</h3>
+<div class="flex gap-6 font-body-md text-body-md text-on-surface-variant">
+<span class="flex items-center"><span class="material-symbols-outlined text-sm mr-2 text-tertiary">location_on</span> Singapore</span>
+<span class="flex items-center"><span class="material-symbols-outlined text-sm mr-2 text-tertiary">domain</span> Research &amp; Insights</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-tertiary group-hover:translate-x-2 transition-all text-2xl">arrow_forward</span>
+</div>
+</a>
+<!-- Job 3 -->
+<a class="block bg-surface-container-lowest border border-outline-variant/20 p-8 rounded-lg hover:border-tertiary hover:bg-surface-container-low transition-all duration-300 group" href="#">
+<div class="flex flex-col md:flex-row justify-between md:items-center gap-6">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3 group-hover:text-tertiary transition-colors">Technology Architect</h3>
+<div class="flex gap-6 font-body-md text-body-md text-on-surface-variant">
+<span class="flex items-center"><span class="material-symbols-outlined text-sm mr-2 text-tertiary">location_on</span> New York, USA</span>
+<span class="flex items-center"><span class="material-symbols-outlined text-sm mr-2 text-tertiary">domain</span> Digital Infrastructure</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-tertiary group-hover:translate-x-2 transition-all text-2xl">arrow_forward</span>
+</div>
+</a>
+</div>
+<div class="text-center">
+<button class="font-label-caps text-label-caps bg-transparent border-2 border-tertiary text-on-surface px-10 py-4 rounded-DEFAULT hover:bg-tertiary hover:text-primary-container transition-all duration-300 tracking-widest">
+                    Explore All Opportunities
+                </button>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="bg-secondary-container py-[160px] text-center px-margin-mobile md:px-margin-desktop relative overflow-hidden">
+<!-- Decorative Elements -->
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at center, #e4c285 1px, transparent 1px); background-size: 32px 32px;"></div>
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-tertiary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-3xl mx-auto">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-10">
+                    Your Next Chapter Starts Here.
+                </h2>
+<a class="inline-flex items-center justify-center font-label-caps text-label-caps bg-tertiary text-primary-container px-10 py-4 rounded-DEFAULT hover:shadow-[0_0_20px_rgba(228,194,133,0.4)] transition-all duration-300 tracking-widest" href="#positions">
+                    View Open Positions
+                </a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full pt-24 pb-12 border-t border-outline-variant/10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-20">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-md text-headline-md text-tertiary mb-6">
+                    Brillaris Global
+                </div>
+</div>
+<div class="col-span-1 md:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="flex flex-col gap-5">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-tertiary transition-all opacity-80 hover:opacity-100" href="#">Institutional Privacy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-tertiary transition-all opacity-80 hover:opacity-100" href="#">Global Compliance</a>
+</div>
+<div class="flex flex-col gap-5">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-tertiary transition-all opacity-80 hover:opacity-100" href="#">Terms of Engagement</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-tertiary transition-all opacity-80 hover:opacity-100" href="#">Accessibility</a>
+</div>
+<div class="flex flex-col gap-5">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-tertiary transition-all opacity-80 hover:opacity-100" href="#">Investor Relations</a>
+</div>
+</div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t border-outline-variant/10 pt-10">
+<p class="font-body-md text-body-md text-on-surface-variant text-sm opacity-60">
+                © 2024 Brillaris Global Advisory. All rights reserved.
+            </p>
+</div>
+</footer>
+</body></html>
